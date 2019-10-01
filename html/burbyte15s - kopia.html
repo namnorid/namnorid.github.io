@@ -7,193 +7,49 @@
     <title>Burbyte 1 5S</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
-    <link rel="stylesheet" href="css/cards-gallery.css">
-    <style>
-* {
-  box-sizing: border-box;
-}
-
-/* Style the body */
-body {
-  font-family: Arial;
-  margin: 0;
-}
-
-/* Header/logo Title */
-.header {
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  display: flex;
-  background-color: #333;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 10%;
-  background-color: #f1f1f1;
-  padding: 20px;
-    margin-left: 100px;
-}
-
-/* Main column */
-.main {
-  flex: 40%;
-  background-color: white;
-  padding: 20px;
-    margin-right: 100px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row, .navbar {   
-    flex-direction: column;
-  }
-}
-</style>
+    <link rel="stylesheet" href="../css/grid-gallery.css">
 </head>
-    <!-- The flexible grid (content) -->
-<div class="row">
-  <div class="side">
-    <p>Ansvarig: Daniel Namnori</p>
-    <br><br><br>
-    <p><em><br>5S: <a class="text-danger">S</a>ortera, <a class="text-danger">S</a>ätta i ordning, <a class="text-danger">S</a>täda, <a class="text-danger">S</a>tandardisera, <a class="text-danger">S</a>köt om</em></p>
-    <!--<div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div> -->
-  </div>
-  <div class="main">
-    <p>Uppdrag: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Paketsortering
-    <br>Avdelning: &nbsp;&nbsp;&nbsp;&nbsp;HUB &ndash; Produktion &ndash; Sortering
-         <br>Process: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pallplastning - Lastning
-      <br>Uppdaterad: &nbsp;2019-09-24</p>
-  </div>
-</div>
-
 <body>
+    
     <section class="py-5">
         <div class="container">
 
             <h2 class="text-center"><font color="#69bc46">Burbyte 1 5S</font>
-                <hr>
+                <hr class="style14">
             </h2>
-         <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="col-sm-8">
-                                <table style="height: 50px; width: 400px;">
-                                    <tbody>
-                                        <tr style="height: 13px;">
-                                            <td style="width: 200px; height: 13px; text-align: left;">Ansvarig:&nbsp;&nbsp;Daniel Namnori</td>
-                                            <td style="width: 180px; height: 13px;"></td>
-                                        </tr>
-                                        <tr style="height: 13px;">
-                                            <td style="width: 120px; height: 13px;"></td>
-                                            <td style="width: 180px; height: 13px;"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 other">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="col-sm-8">
-                                <table style="height: 100px; width: 380px;">
-                                    <tbody>
-                                        <tr style="height: 13px;">
-                                            <td style="width: 120px; height: 13px; text-align: left;">Uppdrag:</td>
-                                            <td style="width: 180px; height: 13px;">Paketsortering</td>
-                                        </tr>
-                                        <tr style="height: 13px;">
-                                            <td style="width: 120px; height: 13px;">Avdelning:</td>
-                                            <td style="width: 180px; height: 13px;">HUB &ndash; Produktion &ndash; Sortering</td>
-                                        </tr>
-                                        <tr style="height: 13px;">
-                                            <td style="width: 120px; height: 13px;">Process:&nbsp;</td>
-                                            <td style="width: 180px; height: 13px;">Pallplastning - Lastning</td>
-                                        </tr>
-                                        <tr style="height: 13px;">
-                                            <td style="width: 120px; height: 13px;">Uppdaterad:</td>
-                                            <td style="width: 180px; height: 13px;">2019-09-24</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
+     <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4"><u>Ansvarig:</u> Daniel Namnori</div>
+       <div class="col-sm-2 col-md-2 col-lg-2"><u>Uppdrag:</u></div>
+       <div class="col-sm-4 col-md-4 col-lg-4">Paketsortering</div>
+   </div>
 
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="col-sm-8">
-                                <table style="height: 10px; width: 500px;">
-                                    <tbody>
-                                        <tr style="height: 10px;">
-                                            <td style="width: 500px; height: 5px;"><em><br>5S: <a class="text-danger">S</a>ortera, <a class="text-danger">S</a>ätta i ordning, <a class="text-danger">S</a>täda, <a class="text-danger">S</a>tandardisera, <a class="text-danger">S</a>köt om</em></td>
-                                            <td style="width: 100px; height: 13px;"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-<div class="container">
+   <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4"></div>
+       <div class="col-sm-2 col-md-2 col-lg-2"><u>Avdelning:</u></div>
+       <div class="col-sm-4 col-md-4 col-lg-4">HUB – Produktion – Sortering</div>
+   </div>
 
-    <h2 class="text-center">
-        <hr>
-    </h2>
+   <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4"></div>
+       <div class="col-sm-2 col-md-2 col-lg-2"><u>Process:</u></div>
+       <div class="col-sm-4 col-md-4 col-lg-4">Pallplastning - Lastning</div>
+   </div>
 
-</div>
-<div class="container">
+   <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4"></div>
+       <div class="col-sm-2 col-md-2 col-lg-2"><u>Uppdaterad:</u></div>
+       <div class="col-sm-4 col-md-4 col-lg-4">2019-09-24</div>
+   </div> 
+            
+            <em><br>5S: <a class="text-danger">S</a>ortera, <a class="text-danger">S</a>ätta i ordning, <a class="text-danger">S</a>täda, <a class="text-danger">S</a>tandardisera, <a class="text-danger">S</a>köt om</em>   
+        
+
+<hr class="style14"><br>
+
+
+
+
     <a style='margin-left:10pt'><strong>Utrustning</strong><br></a>
 
     <p style='margin-bottom:2.0pt;margin-left:21pt;text-indent:-18.0pt'>&nbsp;&nbsp;-&nbsp;&nbsp;Kläder: Ordinarie Bringuniform. Extra varmt lager och jacka vid behov. Skyddshandskar och skyddsskor.</p>
@@ -230,95 +86,80 @@ body {
     <p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:.05pt;
         margin-bottom:2.0pt;margin-left:10pt'>4.&nbsp;&nbsp;Töm soptunnorna vid behov.</p>
 
-            </div></div>
+            </div>
   </section>     
     <!--Grid row-->
-    <div class="row d-flex justify-content-center">
+   <style>
+    .vcenter {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+      }
+
+
+    </style>
+
 
         <!--Grid column-->
-        <div class="col-md-6">
-            <section class="gallery-block cards-gallery">
-                <div class="container">
-                    <div class="text-center">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 transform-on-hover">
-                                    <a class="lightbox" href="../images/5s_sop/clean_zones.png">
-                                        <img src="../images/5s_sop/clean_zones.png" alt="Card Image" class="img-thumbnail" title="Klicka på bilden för att förstora">
-                                    </a>
-                                    <div class="card-body">
-                                        <h6><a>Fig. 1</a></h6>
-                                        <p class="text-muted card-text">Städzoner</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 transform-on-hover">
-                                    <a class="lightbox" href="../images/5s_sop/other_equip.jpg">
-                                        <img src="../images/5s_sop/other_equip.jpg" alt="Card Image" class="img-thumbnail" title="Klicka på bilden för att förstora">
-                                    </a>
-                                    <div class="card-body">
-                                        <h6><a>Fig. 2</a></h6>
-                                        <p class="text-muted card-text">Övriga utrustning</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 transform-on-hover">
-                                    <a class="lightbox" href="../images/5s_sop/cleaned9.jpg">
-                                        <img src="../images/5s_sop/cleaned9.jpg" alt="Card Image" class="img-thumbnail" title="Klicka på bilden för att förstora">
-                                    </a>
-                                    <div class="card-body">
-                                        <p class="text-muted card-text">Städat område</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 transform-on-hover">
-                                    <a class="lightbox" href="images/5s_sop/walkie.jpg">
-                                        <img src="../images/5s_sop/walkie.jpg" alt="Card Image" class="img-thumbnail" title="Klicka på bilden för att förstora">
-                                    </a>
-                                    <div class="card-body">
-                                        <p class="text-muted card-text">Walkie talkies</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 transform-on-hover">
-                                    <a class="lightbox" href="../images/5s_sop/forklift.jpg">
-                                        <img src="../images/5s_sop/forklift.jpg" alt="Card Image" class="img-thumbnail" title="Klicka på bilden för att förstora">
-                                    </a>
-                                    <div class="card-body">
-                                        <p class="text-muted card-text">Ledstaplare</p>
-                                    </div>
-                                </div>
-                            </div>
-                               <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 transform-on-hover">
-                                    <a class="lightbox" href="../images/5s_sop/datorer.jpg">
-                                        <img src="../images/5s_sop/datorer.jpg" alt="Card Image" class="img-thumbnail" title="Klicka på bilden för att förstora">
-                                    </a>
-                                    <div class="card-body">
-                                        <p class="text-muted card-text">Allmän datorpark</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+         <section class="gallery-block grid-gallery">
+                  <div class="container">  
+                <div class="row" style="display: flex; padding: 20px 0px 0px 0px">
+                    <div class="col-md-6 col-lg-4 vcenter item">
+                        <a class="lightbox" href="../images/5s_sop/clean5.jpg">
+                            <img class="img-fluid image scale-on-hover" src="../images/5s_sop/clean5.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 vcenter item">
+                        <a class="lightbox" href="../img/image2.jpg">
+                            <img class="img-fluid image scale-on-hover" src="../img/image2.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="../img/image3.jpg">
+                            <img class="img-fluid image scale-on-hover" src="../img/image3.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="../img/image4.jpg">
+                            <img class="img-fluid image scale-on-hover" src="../img/image4.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="../img/image5.jpg">
+                            <img class="img-fluid image scale-on-hover" src="../img/image5.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="../img/image6.jpg">
+                            <img class="img-fluid image scale-on-hover" src="../img/image6.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="../img/image7.jpg">
+                            <img class="img-fluid image scale-on-hover" src="../img/image7.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="../img/image8.jpg">
+                            <img class="img-fluid image scale-on-hover" src="../img/image8.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <a class="lightbox" href="../img/image9.jpg">
+                            <img class="img-fluid image scale-on-hover" src="../img/image9.jpg">
+                        </a>
                     </div>
                 </div>
-            </section> -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-            <script>
-                baguetteBox.run('.cards-gallery', {
-                    animation: 'slideIn'
-                });
-            </script>
-        </div>
-    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.0.0.js"></script>
+             </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+        <script>
+            baguetteBox.run('.grid-gallery', { animation: 'slideIn'});
+        </script>
 </body>
 </html>
