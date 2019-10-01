@@ -1345,5 +1345,6 @@ hr.style18:before {
   border-radius: 20px; 
 }
 
-
-
+   /* carouseln */
+/*body:not(#_) {background-color: #6d6d6d;} */
+/*.row {background-color: white;} */

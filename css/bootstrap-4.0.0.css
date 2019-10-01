@@ -168,8 +168,8 @@ a {
 }
 
 a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: #000000;
+/*  text-decoration: underline; */
 }
 
 a:not([href]):not([tabindex]) {
@@ -488,8 +488,8 @@ mark,
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
-  max-width: 100%;
-  height: auto;
+  max-width: 50%;
+  height: 50%;
 }
 
 .figure {
@@ -3060,7 +3060,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:focus, .btn-link.focus {
-  text-decoration: underline;
+ /* text-decoration: underline; */
   border-color: transparent;
   box-shadow: none;
 }
@@ -4751,7 +4751,7 @@ tbody.collapse.show {
 }
 
 .page-link:hover {
-  color: #0056b3;
+  color: #9a9a9a;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -9380,23 +9380,23 @@ ul
 	}
 }
     
-a.nav-link1:link
+a.nav-link:link
 {
    color: #6d6d6d!important;
    text-decoration: none;
     font-size: 15px;
 }
-a.nav-link1:visited
+a.nav-link:visited
 {
    color: #6d6d6d!important;
    text-decoration: none;
 }
-a.nav-link1:hover
+a.nav-link:hover
 {
    color: #6d6d6d!important;
-   text-decoration: underline;
+/*   text-decoration: underline; */
 }
-a.nav-link1:active
+a.nav-link:active
 {
    color: #6d6d6d!important;
    text-decoration: none;
@@ -9514,4 +9514,11 @@ h5 {
     color: #69bc46;
         text-align: center;
 }
+/* eget */
+.strikeout {
+  color: blue;
+}
 
+.sel:first-child{
+   text-decoration: line-through;
+}
