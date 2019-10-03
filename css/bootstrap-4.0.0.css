@@ -487,9 +487,9 @@ mark,
   padding: 0.25rem;
   background-color: #fff;
   border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-  max-width: 50%;
-  height: 50%;
+  border-radius: 0rem;
+  /*max-width: 50%; 
+  max-height: 50%;*/ 
 }
 
 .figure {
@@ -3142,10 +3142,10 @@ tbody.collapse.show {
   margin-left: 0.255em;
   vertical-align: 0.255em;
   content: "";
-  border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
+  border-top: 0.3em solid!important;
+  border-right: 0.3em solid transparent!important;
   border-bottom: 0;
-  border-left: 0.3em solid transparent;
+  border-left: 0.3em solid transparent!important;
 }
 
 .dropdown-toggle:empty::after {
@@ -5980,18 +5980,18 @@ button.close {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   background: transparent no-repeat center center;
   background-size: 100% 100%;
 }
 
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='6d6d6d' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='6d6d6d' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 .carousel-indicators {
@@ -8926,7 +8926,7 @@ a.text-dark:hover, a.text-dark:focus {
     box-shadow: none !important;
   }
   a:not(.btn) {
-    text-decoration: underline;
+    /*text-decoration: underline; */
   }
   abbr[title]::after {
     content: " (" attr(title) ")";
@@ -9522,3 +9522,5 @@ h5 {
 .sel:first-child{
    text-decoration: line-through;
 }
+    
+    
