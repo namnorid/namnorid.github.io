@@ -4638,6 +4638,7 @@ tbody.collapse.show {
     background-color: whitesmoke;
   /*min-height: 450px;*/
   box-shadow: 0 0 15px rgba(10, 10, 10, 0.1);
+    
 }
 
 .card > hr {
@@ -4684,7 +4685,7 @@ tbody.collapse.show {
 }
 
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 0.25rem 1.5rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
