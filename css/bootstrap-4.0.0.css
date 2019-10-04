@@ -48,6 +48,7 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
+      background-color: #333;
 }
 
 @-ms-viewport {
@@ -4089,6 +4090,7 @@ tbody.collapse.show {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0rem 0rem;
+    		float: none;
   /*box-shadow: 0 -1.1px 0 rgba(0, 0, 0, 0.15);
   /*background-color: rgba(105, 188, 70, 1); */
 }
@@ -4632,14 +4634,14 @@ tbody.collapse.show {
   padding: 2.25rem 0;
   position: relative;
   will-change:transform; 
+    		float: none;
 }
 
 .card-custom {
   overflow: hidden;
     background-color: white;
   /*min-height: 450px;*/
-  box-shadow: 0 0 15px rgba(10, 10, 10, 0.1);
-    
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.1);    
 }
 
 .card > hr {
@@ -9724,5 +9726,33 @@ h5 {
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
+body {
+  background: #333;
+  color: #FFF;
+  display: flex;
+  height: 100%;
+}
+
+.container {
+  margin: auto;
+  max-width: 768px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.toggle, .dropdown-menu {
+  width: 100%;
+}
+
+.is-active .dropdown-menu {
+  display: block;
+}
+
 
         
