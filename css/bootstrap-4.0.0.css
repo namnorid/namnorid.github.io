@@ -4609,7 +4609,7 @@ tbody.collapse.show {
 }
 
 .card {
-  position: relative;
+ /* position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4622,7 +4622,22 @@ tbody.collapse.show {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0.25rem;*/
+      border: 0;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
+  transition: all .3s ease-in-out;
+  padding: 2.25rem 0;
+  position: relative;
+  will-change:transform; 
+}
+
+.card-custom {
+  overflow: hidden;
+    background-color: whitesmoke;
+  /*min-height: 450px;*/
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.1);
 }
 
 .card > hr {
@@ -4644,7 +4659,7 @@ tbody.collapse.show {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1.25rem;
+  padding: 0rem;
 }
 
 .card-title {
@@ -4673,6 +4688,7 @@ tbody.collapse.show {
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-weight: 600;
 }
 
 .card-header:first-child {
@@ -9692,3 +9708,18 @@ h5 {
         text-align: center;
 }
 /* eget */
+#menu {
+  background: hsla(1,0%,100%,.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 100%;
+  padding-top: 80px;
+        margin-bottom: 100px;;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+    
