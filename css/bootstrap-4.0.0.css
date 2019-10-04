@@ -3180,9 +3180,9 @@ tbody.collapse.show {
   list-style: none;
   background-color: #f8f9fa;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+/*  border: 1px solid rgba(0, 0, 0, 0.15);*/
   border-radius: 0rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.45rem;
 }
 
 #navbarDropup {
@@ -4468,8 +4468,12 @@ tbody.collapse.show {
 
 .navbar-expand .navbar-nav .dropdown-menu {
   position: absolute;
+    
 }
-
+.navbar-expand .navbar-nav .dropdown {
+  float: left;
+  overflow: hidden;
+}
 .navbar-expand .navbar-nav .dropdown-menu-right {
   right: 0;
   left: auto;
@@ -4501,6 +4505,7 @@ tbody.collapse.show {
 .navbar-expand .dropup .dropdown-menu {
   top: auto;
   bottom: 100%;
+    
 }
 
 .navbar-light .navbar-brand {
@@ -9662,6 +9667,11 @@ a.nav-link:active
   .nav-mobile {
     display: block;
   }
+    
+    @media only screen and (max-width: 798px) {
+  .nav-mobile {
+    display: block;
+  }
 
 /* typography
 ==================================================*/
@@ -9682,27 +9692,3 @@ h5 {
         text-align: center;
 }
 /* eget */
-.strikeout {
-  color: blue;
-}
-
-.sel:first-child{
-   text-decoration: line-through;
-}
-
-    /** eget **/
-    .nav > li.dropdown.show .dropdown-menu {
-      /* display: flex;*/
-      border-radius: 0px;
-      width: 100vw !important;
-      /*text-align: center;*/
-      left: 0;
-      right: 0;
-    }
-
-    .dropdown-menu > a {
-      height: 50px;
-      line-height: 50px;
-      vertical-align: middle;
-      display: inline;
-    }
