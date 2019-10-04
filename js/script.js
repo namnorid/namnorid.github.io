@@ -16,3 +16,14 @@ $(document).ready(function() {
     $(this).slideToggle(300, "linear");
   });
 });
+
+$(document).ready(function() {
+  $('#navbarDropup').mouseenter(function() {
+    $('.dropup-menu').slideToggle(300, "linear");
+  });
+  
+  $('.dropup-menu').mouseleave(function() {
+    $(this).slideToggle(300, "linear");
+  });
+});
+
