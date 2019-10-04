@@ -4093,6 +4093,7 @@ tbody.collapse.show {
   /*background-color: rgba(105, 188, 70, 1); */
 }
 
+
 .navbar > .container,
 .navbar > .container-fluid {
   display: -webkit-box;
@@ -4635,7 +4636,7 @@ tbody.collapse.show {
 
 .card-custom {
   overflow: hidden;
-    background-color: whitesmoke;
+    background-color: white;
   /*min-height: 450px;*/
   box-shadow: 0 0 15px rgba(10, 10, 10, 0.1);
     
@@ -4685,8 +4686,8 @@ tbody.collapse.show {
 }
 
 .card-header {
-  padding: 0.25rem 1.5rem;
-  margin-bottom: 0;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
     font-weight: 600;
@@ -9723,4 +9724,5 @@ h5 {
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
-    
+
+        
