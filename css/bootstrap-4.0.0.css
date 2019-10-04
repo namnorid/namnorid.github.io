@@ -3182,8 +3182,9 @@ tbody.collapse.show {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0rem;
+        margin-bottom: 1rem;
+    
 }
-
 
 #navbarDropup {
   padding: .5rem 0;
@@ -3193,7 +3194,7 @@ tbody.collapse.show {
   background-clip: padding-box;
   border-radius: 0rem;
   min-width: 0px;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .dropup .dropup-menu {
