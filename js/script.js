@@ -32,42 +32,37 @@ lightbox.option({
 	'resizeDuration': 150,
 	'wrapAround': true
 });
+
+$(document).ready(function() {
+
+  var toggleAffix = function(affixElement, scrollElement, wrapper) {
       
-// Hide Navbar on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('nav').outerHeight();
+    var height = affixElement.outerHeight();
+    //    top = wrapper.offset().top;
+    
+    if (scrollElement.scrollTop() >= 80){
+        wrapper.height(height);
+        affixElement.addClass("affix");
+    }
+    else {
+        affixElement.removeClass("affix");
+        wrapper.height('auto');
+    }
+      
+  };
+  
 
-$(window).scroll(function(event){
-    didScroll = true;
+  $('[data-toggle="affix"]').each(function() {
+    var ele = $(this),
+        wrapper = $('<div></div>');
+    
+    ele.before(wrapper);
+    $(window).on('scroll resize', function() {
+        toggleAffix(ele, $(this), wrapper);
+    });
+    
+    // init
+    toggleAffix(ele, $(window), wrapper);
+  });
+  
 });
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('nav').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('nav').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    
-    lastScrollTop = st;
-}

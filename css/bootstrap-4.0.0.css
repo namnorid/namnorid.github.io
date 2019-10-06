@@ -48,7 +48,7 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
-      background-color: #333;
+      background-color: #fff;
 }
 
 @-ms-viewport {
@@ -6079,6 +6079,8 @@ button.close {
 }
 
 .carousel-item {
+  height: 100vh;
+  min-height: 1500px;
   position: relative;
   display: none;
   -webkit-box-align: center;
@@ -9742,37 +9744,18 @@ h5 {
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
-body {
-  background: #333;
-  color: #FFF;
-  display: flex;
-  height: 100%;
+.fixed-bottom #first { 
+  -webkit-transition:padding 0.2s ease;
+  -moz-transition:padding 0.2s ease; 
+  -o-transition:padding 0.2s ease;        
+  transition:padding 0.2s ease;  
 }
 
-.container {
-  margin: auto;
-  max-width: 768px;
+.affix #first {
+  padding-top: 1.2em !important;
+  padding-bottom: 1.2em !important;
+  -webkit-transition:padding 0.2s linear;
+  -moz-transition:padding 0.2s linear;  
+  -o-transition:padding 0.2s linear;         
+  transition:padding 0.2s linear;  
 }
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  display: none;
-}
-
-.toggle, .dropdown-menu {
-  width: 100%;
-}
-
-.is-active .dropdown-menu {
-  display: block;
-}
-
-.full-width-div {
-    position: absolute;
-    width: 100%;
-    left: 0;
-}
-        
