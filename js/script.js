@@ -66,3 +66,72 @@ $(document).ready(function() {
   });
   
 });
+var toggleAffix = function(affixElement, scrollElement, wrapper) {
+  var height = affixElement.outerHeight(),
+      top = wrapper.offset().top;
+
+  if (scrollElement.scrollTop() >= top){
+      wrapper.height(height);
+      affixElement.addClass("affix");
+  }
+  else {
+      affixElement.removeClass("affix");
+      wrapper.height('auto');
+  }
+};
+
+/* use toggleAffix on any data-toggle="affix" elements */
+$('[data-toggle="affix"]').each(function() {
+  var ele = $(this),
+      wrapper = $('<div></div>');
+
+  ele.before(wrapper);
+  $(window).on('scroll resize', function() {
+      toggleAffix(ele, $(this), wrapper);
+  });
+
+  // init
+  toggleAffix(ele, $(window), wrapper);
+});
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+
+$(document).ready(function() {
+
+  var toggleAffix = function(affixElement, scrollElement, wrapper) {
+  
+    var height = affixElement.outerHeight(),
+        top = wrapper.offset().top;
+    
+    if (scrollElement.scrollTop() >= top){
+        wrapper.height(height);
+        affixElement.addClass("affix");
+    }
+    else {
+        affixElement.removeClass("affix");
+        wrapper.height('auto');
+    }
+      
+  };
+  
+
+  $('["affix"]').each(function() {
+    var ele = $(this),
+        wrapper = $('<div></div>');
+    
+    ele.before(wrapper);
+    $(window).on('scroll resize', function() {
+        toggleAffix(ele, $(this), wrapper);
+    });
+    
+    // init
+    toggleAffix(ele, $(window), wrapper);
+  });
+  
+});
