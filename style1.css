@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #333;
+  background-color: #ffd54f;
 }
 
 .container {
@@ -17,13 +17,13 @@ h1 {
   font-weight: normal;
 }
 
-li {
+li.c  {
   display: inline-block;
   font-size: 1.5em;
   list-style-type: none;
   padding: 1em;
   text-transform: uppercase;
-    color: whitesmoke;
+  
 }
 
 li span {
@@ -48,7 +48,7 @@ li span {
 /*html, body {
   height: 100%;
   margin: 0;
-}*/
+}
 
 body {
   -webkit-box-align: center;
@@ -70,4 +70,4 @@ body {
 
 .container {
   margin: 0 auto;
-}
+}*/
