@@ -181,6 +181,14 @@
   border-style: solid;
   border-radius: 4px;
 }
+.navmenu2,
+.navbar-offcanvas {
+  width: 300px;
+  height: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
 .lockIphone {
   position: fixed;
   overflow: hidden;
@@ -274,7 +282,7 @@
 }
 .navmenu-brand {
   display: block;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 20px;
   padding: 10px 15px;
   margin: 10px 0;

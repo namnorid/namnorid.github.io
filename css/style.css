@@ -1923,3 +1923,24 @@ hr.style18:before {
 	-ms-flex-pack: center !important;
 	justify-content: center !important;
   }
+  .centered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+  }
+.footer {
+    padding: 30px 0;
+    text-align: center;
+ /*   background: #f5f5f5 */
+}
+
+.copyright {
+    color: #ccc;
+    margin-bottom: 0;
+}
+
+.footer-img {
+    margin: 0 auto;
+}
