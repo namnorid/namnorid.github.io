@@ -14,7 +14,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css'>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link href="../css/jasny-bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="../css/swipe.css">
     <!-- Custom styles for this template -->
     <!--<link href="../css/navmenu-push.css" rel="stylesheet"> -->
 
@@ -27,7 +27,77 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
+  <div class="header d-md-none d-lg-none d-xl-none" id="header">
+      <div class="rx_icon rotate" id="rx_icon">MENY</div>
+      <!--<div class="title rotate myButton" id="title" onclick="location.href='../index.html'">HEM</div> -->
+      <button class="rotate myButton" onclick="location.href='../index.html'" type="button">
+        HEM</button>
+  </div>
+  <!--<div class="container2">
+      <div class="content">
+          <h2>About this</h2>
+          <p>This library contains <a href="https://material.google.com/patterns/navigation-drawer.html">Material Design Navigation Drawer</a> component that could be easily put in your site.</p>
+          <p>You can move drawer with touch event :)</p>
+          <p>Drawer perfectly worked on <b>Desktop</b> and <b>Mobile</b> devices.</p>
+          <p>You can add any content to drawer. <b>Links</b> and <b>event</b>(onclick, etc.) working ok.</p>
+          <p>Used Hamburger icon: <a href="http://www.materialup.com/posts/toolbar-back-arrow" target="_blank">Hamburger To Back Arrow</a></p>
+          <p>More info see in GitHub: <a href="https://github.com/RadiationX/Material-Drawer" target="_blank">Material-Drawer</a></p>
+          <sub>I set "float to right" to title and icon only for example :)</sub>
+      </div>-->
+  </div>
+  <div class="header d-md-none d-lg-none d-xl-none" id="header">
+      <div class="rx_icon rotate" id="rx_icon">MENY</div>
+      <!--<div class="title rotate myButton" id="title">MENY</div> -->
+  </div>
+  <div class="drawer" id="drawer">
+      <div class="content">
+         <ul class="menu">
+            <div class="container3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">5S</h4>
+                </div>
+              </div><br>
+              <div class="card">
+                <div class="list-group list-group-flush">
+                  <a href="burbyte5s.html" class="list-group-item list-group-item-action">Burbyte</a>
+                  <a href="finlanddanmark5s.html" class="list-group-item list-group-item-action">Finland/Danmark</a>
+                  <a href="norge5s.html" class="list-group-item list-group-item-action">Norge</a>
+                  <a href="pastick5s.html" class="list-group-item list-group-item-action">Påstick</a>
+                </div>
+              </div>
+            </div>
+            <div class="container3">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">SOP</h4>
+                  </div>
+                </div><br>
+                <div class="card">
+                  <div class="list-group list-group-flush">
+                    <a href="burbytesop.html" class="list-group-item list-group-item-action">Burbyte</a>
+                    <a href="finlanddanmarksop.html" class="list-group-item list-group-item-action">Finland/Danmark</a>
+                    <a href="norgesop.html" class="list-group-item list-group-item-action">Norge</a>
+                    <a href="pasticksop.html" class="list-group-item list-group-item-action">Påstick</a>
+                  </div>
+                </div>
+              </div>
+              <div class="container3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Lathundar</h4>
+                    </div>
+                  </div><br>
+                  <div class="card">
+                    <div class="list-group list-group-flush">
+                      <a href="lathund_stycke.html" class="list-group-item list-group-item-action">Styckegodshantering</a>
+                      <a href="lathund_B2C_utan_EDI.html" class="list-group-item list-group-item-action">Missing EDI B2C</a>
+                    </div>
+                  </div>
+                </div>
+          </ul>
+      </div>
+  </div>
   <body>
       <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
           <a class="navmenu-brand" href="../index.html" title="HEM">LEAN <span class="glyphicon glyphicon-home small"></span></a>
@@ -254,5 +324,6 @@
     <script src="../js/offcanvas.js"></script>
     <script src="../js/script.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js'></script>
+    <script  src="../js/swipe.js"></script>
   </body>
 </html>
