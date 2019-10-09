@@ -536,9 +536,3 @@ hr.style18:before {
   margin-left: -9px;
   margin-bottom: 100px;
 }
-.table-sm {
-  th,
-  td {
-    padding: $table-cell-padding-sm;
-  }
-}
