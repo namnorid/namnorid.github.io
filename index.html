@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="css/jasny-bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/swipe.css">
-    
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/bootstrap-select.css">
     <!-- Custom styles for this template -->
     <!--<link href="css/navmenu-push.css" rel="stylesheet"> -->
 
@@ -27,10 +29,48 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
    
-        
+
   </head>
 
   <body>
+          <div class="container" style="margin-top:250px;">
+        <div class="row">
+            <div class="col-12">
+                <h1>LEAN<font color=#69bc46>.</font></h1>
+                <font color=#6d6d6d>&nbsp;Jobba smartare, inte snabbare.</font>
+            </div>
+        </div>
+    
+    <hr>
+      <!--<select class="selectpicker" data-live-search="true" onchange="location = this.value;" title="Sök 5S, SOP och lathund">
+        <option value="/html/burbyte5s.html" data-tokens="burbyte 5s paket">Burbyte 5S</a></option>
+        <option data-tokens="mustard">Burger, Shake and a Smile</option>
+        <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+      </select>-->
+      
+      
+      <div class="form-group">
+        <!--<label for="tokens">Key words (data-tokens)</label>-->
+        <select id="tokens" class="selectpicker form-control" multiple data-live-search="true" onchange="location = this.value;" title="Sök">
+          <optgroup label="5Ser">
+          <option value="/html/burbyte5s.html" data-tokens="paket burbyte 5s">Burbyte</option>
+          <option value="/html/pastick5s.html" data-tokens="paket påstick 5s">Påstick</option>
+          <option value="/html/norge5s.html" data-tokens="pall norge 5s">Norge</option>
+          <option value="/html/finlanddanmark5s.html" data-tokens="pall finland danmark 5s">Finland/Danmark</option>
+          <optgroup label="SOPer">
+          <option value="/html/burbytesop.html" data-tokens="paket burbyte SOP">Burbyte</option>
+          <option value="/html/pasticksop.html" data-tokens="paket påstick SOP">Påstick</option>
+          <option value="/html/norgesop.html" data-tokens="pall norge SOP">Norge</option>
+          <option value="/html/finlanddanmarksop.html" data-tokens="pall finland danmark SOP">Finland/Danmark</option>
+          <!--<option disabled><font color=#6d6d6d>――――――――――――</font></option>-->
+          <optgroup label="Lathundar">
+          <option value="/html/lathund_stycke.html" data-tokens="pall styckegodshantering SOP">Styckegodshantering</option>
+          <option value="/html/lathund_B2C_utan_EDI.html" data-tokens="paket B2C utan EDI SOP">B2C utan EDI</option>
+        </select>
+      </div>
+      
+      
+        
 
     <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
       <!--<a class="navmenu-brand" href="index.html">LEAN</a> -->
@@ -122,32 +162,59 @@
           </section>
      
           
-        <footer class="text-center">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <h1>LEAN<font color=#69bc46>.</font></h1>
-                  <p><font color=#6d6d6d>Bra skit.</font></p>
-              </div>
-          </div>
-      </div>
-  </footer>
+
+
+
       <!--<p class="lead">This example demonstrates the use of the offcanvas plugin with a push effect.</p>
       <p>You get the push effect by setting the <code>canvas</code> option to 'body'.</p>
       <p>Also take a look at the example for a navmenu with <a href="../navmenu">slide in effect</a> and <a href="../navmenu-reveal">reveal effect</a>.</p>
     </div> -->
     <!-- /.container -->
-
+    <script>
+      $(document).ready(function () {
+        var mySelect = $('#first-disabled2');
+    
+        $('#special').on('click', function () {
+          mySelect.find('option:selected').prop('disabled', true);
+          mySelect.selectpicker('refresh');
+        });
+    
+        $('#special2').on('click', function () {
+          mySelect.find('option:disabled').prop('disabled', false);
+          mySelect.selectpicker('refresh');
+        });
+    
+        $('#basic2').selectpicker({
+          liveSearch: true,
+          maxOptions: 1
+        });
+      });
+    </script>
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
     <script src="/js/jasny-bootstrap.min.js"></script>
     <script src="/js/offcanvas.js"></script>
-    <script src="js/script.js"></script>
     <!--<script src="/js/swipe.js"></script> -->
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
   </body>
 </html>
