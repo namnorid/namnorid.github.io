@@ -27,137 +27,98 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <div class="header d-md-none d-lg-none d-xl-none" id="header">
-      <div class="rx_icon rotate" id="rx_icon">MENY</div>
-      <!--<div class="title rotate myButton" id="title" onclick="location.href='../index.html'">HEM</div> -->
-      <button class="rotate myButton" onclick="location.href='../index.html'" type="button">
-        HEM</button>
-  </div>
-  <!--<div class="container2">
-      <div class="content">
-          <h2>About this</h2>
-          <p>This library contains <a href="https://material.google.com/patterns/navigation-drawer.html">Material Design Navigation Drawer</a> component that could be easily put in your site.</p>
-          <p>You can move drawer with touch event :)</p>
-          <p>Drawer perfectly worked on <b>Desktop</b> and <b>Mobile</b> devices.</p>
-          <p>You can add any content to drawer. <b>Links</b> and <b>event</b>(onclick, etc.) working ok.</p>
-          <p>Used Hamburger icon: <a href="http://www.materialup.com/posts/toolbar-back-arrow" target="_blank">Hamburger To Back Arrow</a></p>
-          <p>More info see in GitHub: <a href="https://github.com/RadiationX/Material-Drawer" target="_blank">Material-Drawer</a></p>
-          <sub>I set "float to right" to title and icon only for example :)</sub>
-      </div>-->
-  </div>
-  <div class="header d-md-none d-lg-none d-xl-none" id="header">
-      <div class="rx_icon rotate" id="rx_icon">MENY</div>
-      <!--<div class="title rotate myButton" id="title">MENY</div> -->
-  </div>
-  <div class="drawer" id="drawer">
-      <div class="content">
-         <ul class="menu">
-            <div class="container3">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">5S</h4>
-                </div>
-              </div><br>
-              <div class="card">
-                <div class="list-group list-group-flush">
-                  <a href="burbyte5s.html" class="list-group-item list-group-item-action">Burbyte</a>
-                  <a href="finlanddanmark5s.html" class="list-group-item list-group-item-action">Finland/Danmark</a>
-                  <a href="norge5s.html" class="list-group-item list-group-item-action">Norge</a>
-                  <a href="pastick5s.html" class="list-group-item list-group-item-action">Påstick</a>
-                </div>
+  <body>
+      <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+        <!--<a class="navmenu-brand" href="index.html">LEAN</a> -->
+        <a class="navbar-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Bring_logo.svg" height="80"
+            style="margin:20px 20px" alt="">
+        </a>
+        <ul class="nav navmenu-nav flex-column">
+    
+          <div class="container3">
+            <div class="card">
+              <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action disabled">
+                  <font size="4">5Ser</font>
+                </a>
+                <a href="burbyte15s.html" class="list-group-item list-group-item-action">Burbyte</a>
+                <a href="emb5s.html" class="list-group-item list-group-item-action">EMB</a>
+                <a href="embpall5s.html" class="list-group-item list-group-item-action">EMB pallproduktion</a>
+                <a href="finlanddanmark5s.html" class="list-group-item list-group-item-action">Finland/Danmark</a>
+                <a href="norge5s.html" class="list-group-item list-group-item-action">Norge</a>
+                <a href="pastick5s.html" class="list-group-item list-group-item-action">Påstick</a>
+    
               </div>
             </div>
-            <div class="container3">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">SOP</h4>
-                  </div>
-                </div><br>
-                <div class="card">
-                  <div class="list-group list-group-flush">
-                    <a href="burbytesop.html" class="list-group-item list-group-item-action">Burbyte</a>
-                    <a href="finlanddanmarksop.html" class="list-group-item list-group-item-action">Finland/Danmark</a>
-                    <a href="norgesop.html" class="list-group-item list-group-item-action">Norge</a>
-                    <a href="pasticksop.html" class="list-group-item list-group-item-action">Påstick</a>
-                  </div>
-                </div>
+          </div>
+          <div class="container3">
+            <div class="card">
+              <div class="list-group list-group-flush">
+                <a class="list-group-item disabled">
+                  <font size="4">SOPar</font>
+                </a>
+                <a href="burbyte1sop.html" class="list-group-item list-group-item-action">Burbyte</a>
+                <a href="embsop.html" class="list-group-item list-group-item-action">EMB</a>
+                <a href="embpallsop.html" class="list-group-item list-group-item-action">EMB pallproduktion</a>
+                <a href="finlanddanmarksop.html" class="list-group-item list-group-item-action">Finland/Danmark</a>
+                <a href="norgesop.html" class="list-group-item list-group-item-action">Norge</a>
+                <a href="pasticksop.html" class="list-group-item list-group-item-action">Påstick</a>
               </div>
-              <div class="container3">
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title">Lathundar</h4>
-                    </div>
-                  </div><br>
-                  <div class="card">
-                    <div class="list-group list-group-flush">
-                      <a href="lathund_stycke.html" class="list-group-item list-group-item-action">Styckegodshantering</a>
-                      <a href="lathund_B2C_utan_EDI.html" class="list-group-item list-group-item-action">Missing EDI B2C</a>
-                    </div>
-                  </div>
-                </div>
-          </ul>
+            </div>
+          </div>
+          <div class="container3">
+            <div class="card">
+              <div class="list-group list-group-flush">
+                <a class="list-group-item disabled">
+                  <font size="4">Lathundar</font>
+                </a>
+                <a href="lathund_stycke.html" class="list-group-item list-group-item-action">Styckegodshantering</a>
+                <a href="lathund_B2C_utan_EDI.html" class="list-group-item list-group-item-action">Missing EDI B2C</a>
+              </div>
+            </div>
+          </div>
+        </ul>
       </div>
-  </div>
-  <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
-      <a class="navmenu-brand" href="../index.html" title="HEM">LEAN <span class="glyphicon glyphicon-home small"></span></a>
-      <hr>
-      <!--<ul class="nav navmenu-nav flex-column">
-        <li class="nav-item"><a class="nav-link" href="../navmenu/">Slide in</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./">Push</a></li>
-        <li class="nav-item"><a class="nav-link" href="../navmenu-reveal/">Reveal</a></li>
-        <li class="nav-item"><a class="nav-link" href="../navbar-offcanvas/">Off canvas navbar</a></li>
-      </ul> -->
-      <ul class="nav navmenu-nav flex-column">
-        <!--<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>-->
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">5S<b class="caret"></b></a>
-          <ul class="dropdown-menu navmenu-nav">
-              <li class="dropdown-header">Paketproduktion</li>
-            <li class="nav-item disabled" style='margin-left:8pt'><a class="nav-link" href="#">Burbyte</a></li>
-            <li class="nav-item disabled" style='margin-left:8pt'><a class="nav-link" href="#">EMB</a></li>
-            <li class="nav-item" style='margin-left:8pt'><a class="nav-link" href="pastick5s.html">Påstick</a></li>
-            <li class="dropdown-divider"></li>
-            <li class="dropdown-header">Pallproduktion</li>
-            <li class="nav-item" style='margin-left:8pt'><a class="nav-link" href="finlanddanmark5s.html">Finland/Danmark</a></li>
-            <li class="nav-item" style='margin-left:8pt'><a class="nav-link" href="norge5s.html">Norge</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SOP<b class="caret"></b></a>
-            <ul class="dropdown-menu navmenu-nav">
-                <li class="dropdown-header">Paketproduktion</li>
-              <li class="nav-item disabled" style='margin-left:8pt'><a class="nav-link" href="#">Burbyte</a></li>
-              <li class="nav-item disabled" style='margin-left:8pt'><a class="nav-link" href="#">EMB</a></li>
-              <li class="nav-item" style='margin-left:8pt'><a class="nav-link" href="pasticksop.html">Påstick</a></li>
-              <li class="dropdown-divider"></li>
-              <li class="dropdown-header">Pallproduktion</li>
-              <li class="nav-item" style='margin-left:8pt'><a class="nav-link" href="finlanddanmarksop.html">Finland/Danmark</a></li>
-              <li class="nav-item" style='margin-left:8pt'><a class="nav-link" href="norgesop.html">Norge</a></li>
+      <header class="navbar navbar-light bg-transparent fixed-top d-none d-md-block">
+    
+    
+        <div class="row">
+          <div class="col">
+            <ul class="pagination justify" style="margin:10px 0">
+              <li class="page-item"><a class="page-link" data-toggle="offcanvas" data-target=".navmenu"
+                  data-canvas="body">Meny</a></li>
+              <li class="page-item"><a class="page-link" href="../index.html">Hem</a></li>
             </ul>
-          </li>
-          <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lathundar<b class="caret"></b></a>
-              <ul class="dropdown-menu navmenu-nav">
-                  <li class="dropdown-header">Paketproduktion</li>
-                <li class="nav-item" style='margin-left:8pt'><a class="nav-link" href="lathund_B2C_utan_EDI.html">B2C Missing EDI</a></li>
-                <li class="nav-item" style='margin-left:8pt'><a class="nav-link" href="lathund_stycke.html">Styckegodshantering</a></li>
-                <li class="nav-item disabled" style='margin-left:8pt'><a class="nav-link" href="#">Platshållare</a></li>
-                <li class="dropdown-divider"></li>
-                <li class="dropdown-header">Pallproduktion</li>
-                <li class="nav-item" style='margin-left:8pt'><a class="nav-link" href="#">Kommande</a></li>
-                <li class="nav-item" style='margin-left:8pt'><a class="nav-link" href="#">Kommande</a></li>
-              </ul>
-            </li>
-      </ul>
-    </div>
-
-    <header class="navbar navbar-light bg-transparent fixed-top d-none d-md-block">
-      <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </header>
+          </div>
+        </div>
+        <!-- <div class="myButton rotate" type="button" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">MENY-->
+        <!--</div>-->
+    
+        <!-- <div class="header d-md-none d-lg-none d-xl-none" id="header">
+        <div class="rx_icon rotate" id="rx_icon">MENY</div>
+        <div class="title rotate myButton" id="title">MENY</div> -->
+      </header>
+      <!-- /top -->
+    
+      <header class="navbar navbar-light bg-transparent fixed-bottom d-md-none d-lg-none d-xl-none">
+    
+        <ul class="pagination" style="margin:10px 0">
+          <li class="page-item"><a class="page-link" data-toggle="offcanvas" data-target=".navmenu"
+              data-canvas="body">Meny</a></li>
+          <li class="page-item"><a class="page-link" href="../index.html">Hem</a></li>
+        </ul>
+        <hr>
+        <h6></h6>
+        <div class="row">
+          <div class="col-12 justify-content-end d-flex">
+    
+          </div>
+        </div>
+    
+        <hr>
+    
+    
+      </header>
    <section class="py-5">
         <div class="container">
             <h2 class="text-center">
@@ -190,12 +151,6 @@
             </div>
 
             <em><br>SOP: <a class="text-danger">S</a>tandard, <a class="text-danger">O</a>perating, <a class="text-danger">P</a>rocedure</em>
-
-
-            <hr class="style"><br>
-
-
-
 
             <a style='margin-left:5pt'><strong>Start</strong><br></a>
 

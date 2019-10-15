@@ -536,3 +536,8 @@ hr.style18:before {
   margin-left: -9px;
   margin-bottom: 100px;
 }
+body label {
+  color: #6c757d;
+  display: block;
+  margin-top: 2rem;
+}
