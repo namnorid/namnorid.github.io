@@ -1858,15 +1858,3 @@
     })(jQuery);
 
 }));
-$(function() {
-	
-	$('.selectpicker').selectpicker();
-	
-	$('button').click(function() {
-		
-		$('#tokens').selectpicker('deselectAll');
-		
-	});
-
-	
-});
