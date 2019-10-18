@@ -175,9 +175,48 @@
               <div class="col-12">
                   <h1>LEAN<font color=#69bc46>.</font></h1>
                   <p><font color=#6d6d6d>&nbsp;Jobba smartare, inte snabbare.</font></p>
-                  <div class="form-group w-50 box-shadow-none">
+                  <div class="row-fluid">
+                      <select class="selectpicker" data-show-subtext="true" data-live-search="true" title="Sök">
+                          <optgroup label="5Ser">
+                              <option value="/html/burbyte15s.html" data-tokens="paket burbyte 5s" data-subtext="5S">Burbyte</option>
+                              <option value="/html/dagtid15s.html" data-tokens="pall dagtid 1 5s" data-subtext="5S">Dagtid 1</option>
+                              <option value="/html/dagtidlastnfi5s.html" data-tokens="pall lastning finland dagtid 5s" data-subtext="5S">Dagtid - Finlandslastning</option>
+                              <option value="/html/dagtidsortfi5s.html" data-tokens="paket sortering finland dagtid 5s" data-subtext="5S">Dagtid - Finlandssortering</option>
+                              <option value="/html/dagtidsupport5s.html" data-tokens="paket pall support dagtid 5s" data-subtext="5S">Dagtid support</option>
+                              <option value="/html/emb5s.html" data-tokens="paket emb 5s" data-subtext="5S">EMB</option>
+                              <option value="/html/embpall5s.html" data-tokens="paket emb pall 5s" data-subtext="5S">EMB pallproduktion</option>
+                              <option value="/html/finlanddanmark5s.html" data-tokens="pall finland danmark 5s" data-subtext="5S">Finland/Danmark</option>
+                              <option value="/html/grindstuga5s.html" data-tokens="grindstuga 5s" data-subtext="5S">Grindstuga</option>
+                              <option value="/html/infeed5s.html" data-tokens="paket infeed 5s" data-subtext="5S">Infeed</option>
+                              <option value="/html/lastare15s.html" data-tokens="pall lastare 5s" data-subtext="5S">Lastare</option>
+                              <option value="/html/norge5s.html" data-tokens="pall norge 5s" data-subtext="5S">Norge</option>
+                              <option value="/html/oe5s.html" data-tokens="paket oe 5s" data-subtext="5S">OE</option>
+                              <option value="/html/pastick5s.html" data-tokens="paket påstick 5s" data-subtext="5S">Påstick</option>
+                              <optgroup label="SOPar">
+                              <option value="/html/burbyte1sop.html" data-tokens="paket burbyte SOP" data-subtext="SOP">Burbyte</option>
+                              <option value="/html/dagtid1sop.html" data-tokens="pall dagtid 1 SOP" data-subtext="SOP">Dagtid 1</option>
+                              <option value="/html/dagtidlastnfisop.html" data-tokens="pall lastning finland dagtid SOP" data-subtext="SOP">Dagtid - Finlandslastning</option>
+                              <option value="/html/dagtidsortfisop.html" data-tokens="paket sortering finland dagtid SOP" data-subtext="SOP">Dagtid - Finlandssortering</option>
+                              <option value="/html/dagtidsupportsop.html" data-tokens="paket pall support dagtid SOP" data-subtext="SOP">Dagtid support</option>
+                              <option value="/html/embsop.html" data-tokens="paket emb SOP" data-subtext="SOP">EMB</option>
+                              <option value="/html/embpallsop.html" data-tokens="paket emb pall SOP" data-subtext="SOP">EMB pallproduktion</option>
+                              <option value="/html/finlanddanmarksop.html" data-tokens="pall finland danmark SOP" data-subtext="SOP">Finland/Danmark</option>
+                              <option value="/html/grindstugasop.html" data-tokens="grindstuga SOP" data-subtext="SOP">Grindstuga</option>
+                              <option value="/html/infeedsop.html" data-tokens="paket infeed SOP" data-subtext="SOP">Infeed</option>
+                              <option value="/html/lastare1sop.html" data-tokens="pall lastare sop" data-subtext="SOP">Lastare</option>
+                              <option value="/html/norgesop.html" data-tokens="pall norge SOP" data-subtext="SOP">Norge</option>
+                              <option value="/html/oesop.html" data-tokens="paket oe sop" data-subtext="SOP">OE</option>
+                              <option value="/html/pasticksop.html" data-tokens="paket påstick SOP" data-subtext="SOP">Påstick</option>
+                              <optgroup label="Lathundar">
+                                  <option value="/html/lathund_stycke.html" data-tokens="pall styckegodshantering SOP" data-subtext="SOP">Styckegodshantering</option>
+                                  <option value="/html/lathund_B2C_utan_EDI.html" data-tokens="paket B2C utan EDI SOP" data-subtext="SOP">B2C utan EDI</option>
+                                </optgroup>
+                      </select>
+                      <button type="button" class="btn bg-light"><a href="index.html"><font color="#6c757d">&#8634;</font></a></button>
+                      </div>
+                  <!--<div class="form-group shadow-none">-->
                     <!--<label for="tokens">Key words (data-tokens)</label>-->
-                    <select id="tokens" class="selectpicker form-control" multiple data-live-search="true" onchange="location = this.value;" title="Sök">
+                    <!--<select id="tokens" class="selectpicker form-control" multiple data-live-search="true" onchange="location = this.value;" title="Sök">
                       <optgroup label="5Ser">
                       <option value="/html/burbyte15s.html" data-tokens="paket burbyte 5s" data-subtext="5S">Burbyte</option>
                       <option value="/html/dagtid15s.html" data-tokens="pall dagtid 1 5s" data-subtext="5S">Dagtid 1</option>
@@ -188,7 +227,10 @@
                       <option value="/html/embpall5s.html" data-tokens="paket emb pall 5s" data-subtext="5S">EMB pallproduktion</option>
                       <option value="/html/finlanddanmark5s.html" data-tokens="pall finland danmark 5s" data-subtext="5S">Finland/Danmark</option>
                       <option value="/html/grindstuga5s.html" data-tokens="grindstuga 5s" data-subtext="5S">Grindstuga</option>
+                      <option value="/html/infeed5s.html" data-tokens="paket infeed 5s" data-subtext="5S">Infeed</option>
+                      <option value="/html/lastare15s.html" data-tokens="pall lastare 5s" data-subtext="5S">Lastare</option>
                       <option value="/html/norge5s.html" data-tokens="pall norge 5s" data-subtext="5S">Norge</option>
+                      <option value="/html/oe5s.html" data-tokens="paket oe 5s" data-subtext="5S">OE</option>
                       <option value="/html/pastick5s.html" data-tokens="paket påstick 5s" data-subtext="5S">Påstick</option>
                       <optgroup label="SOPar">
                       <option value="/html/burbyte1sop.html" data-tokens="paket burbyte SOP" data-subtext="SOP">Burbyte</option>
@@ -200,7 +242,10 @@
                       <option value="/html/embpallsop.html" data-tokens="paket emb pall SOP" data-subtext="SOP">EMB pallproduktion</option>
                       <option value="/html/finlanddanmarksop.html" data-tokens="pall finland danmark SOP" data-subtext="SOP">Finland/Danmark</option>
                       <option value="/html/grindstugasop.html" data-tokens="grindstuga SOP" data-subtext="SOP">Grindstuga</option>
+                      <option value="/html/infeedsop.html" data-tokens="paket infeed SOP" data-subtext="SOP">Infeed</option>
+                      <option value="/html/lastare1sop.html" data-tokens="pall lastare sop" data-subtext="SOP">Lastare</option>
                       <option value="/html/norgesop.html" data-tokens="pall norge SOP" data-subtext="SOP">Norge</option>
+                      <option value="/html/oesop.html" data-tokens="paket oe sop" data-subtext="SOP">OE</option>
                       <option value="/html/pasticksop.html" data-tokens="paket påstick SOP" data-subtext="SOP">Påstick</option>
                       <optgroup label="Lathundar">
                           <option value="/html/lathund_stycke.html" data-tokens="pall styckegodshantering SOP" data-subtext="SOP">Styckegodshantering</option>
@@ -209,7 +254,7 @@
 
                     </select>
                   </div>      <button type="button" class="btn bg-light"><a href="index.html"><font color="#6c757d">&#8634;</font></a></button>
-              </div>
+              </div>-->
           </div>
       </div>
       <div class="container">
@@ -228,7 +273,6 @@
             </div>
         </div>
       </div>
-      
       <!--<p class="lead">This example demonstrates the use of the offcanvas plugin with a push effect.</p>
       <p>You get the push effect by setting the <code>canvas</code> option to 'body'.</p>
       <p>Also take a look at the example for a navmenu with <a href="../navmenu">slide in effect</a> and <a href="../navmenu-reveal">reveal effect</a>.</p>
