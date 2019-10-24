@@ -59,7 +59,9 @@ body {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 }
-
+.container-1 {
+  display: inline-block;
+}
 .container2 {
   padding: 0 1em;
   padding-top: 64px;

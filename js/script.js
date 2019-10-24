@@ -43,3 +43,4 @@ $(document).ready(function(){
         $("#filter-count").text("Number of Filter = "+count);
     });
 });
+
