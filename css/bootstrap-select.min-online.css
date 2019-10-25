@@ -19,7 +19,7 @@ select.selectpicker {
     width: 100%;
     z-index: 1;
     text-align: right;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .bootstrap-select>.dropdown-toggle.bs-placeholder {
@@ -163,7 +163,8 @@ select.selectpicker {
     height: 100%;
     font-size: inherit;
     line-height: inherit;
-    border-radius: inherit
+    border-radius: inherit;
+    display: none;
 }
 
 .bootstrap-select.form-control-lg .dropdown-toggle,
@@ -222,7 +223,7 @@ select.selectpicker {
     padding-left: inherit;
     height: 100%;
     width: 100%;
-    text-align: left
+    text-align: left;
 }
 
 .bootstrap-select .dropdown-toggle .filter-option-inner {
@@ -371,12 +372,13 @@ select.selectpicker {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-    transform: rotate(45deg)
+    transform: rotate(45deg);
 }
 
 .bootstrap-select.show-menu-arrow.open>.dropdown-toggle,
 .bootstrap-select.show-menu-arrow.show>.dropdown-toggle {
-    z-index: 1061
+    z-index: 1061;
+    display: none;
 }
 
 .bootstrap-select.show-menu-arrow .dropdown-toggle .filter-option:before {
@@ -387,7 +389,7 @@ select.selectpicker {
     position: absolute;
     bottom: -4px;
     left: 9px;
-    display: none
+    display: none;
 }
 
 .bootstrap-select.show-menu-arrow .dropdown-toggle .filter-option:after {
@@ -398,7 +400,7 @@ select.selectpicker {
     position: absolute;
     bottom: -4px;
     left: 10px;
-    display: none
+    display: none;
 }
 
 .bootstrap-select.show-menu-arrow.dropup .dropdown-toggle .filter-option:before {
@@ -412,7 +414,8 @@ select.selectpicker {
     bottom: auto;
     top: -4px;
     border-top: 6px solid #fff;
-    border-bottom: 0
+    border-bottom: 0;
+    display: none;
 }
 
 .bootstrap-select.show-menu-arrow.pull-right .dropdown-toggle .filter-option:before {
@@ -429,7 +432,7 @@ select.selectpicker {
 .bootstrap-select.show-menu-arrow.open>.dropdown-toggle .filter-option:before,
 .bootstrap-select.show-menu-arrow.show>.dropdown-toggle .filter-option:after,
 .bootstrap-select.show-menu-arrow.show>.dropdown-toggle .filter-option:before {
-    display: block
+    display: none;
 }
 
 .bs-actionsbox,

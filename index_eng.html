@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="css/jasny-bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/swipe.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css'>
+    <link rel="stylesheet" href="css/bootstrap-select.min-online.css">
+    <!--<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css'>-->
     <!--<link rel="stylesheet" href="css/script.css">-->
     <!-- Custom styles for this template -->
     <!--<link href="css/navmenu-push.css" rel="stylesheet"> -->
@@ -32,105 +33,7 @@
   </head>
 
   <body>
- <!--     <div class="header d-md-none d-lg-none d-xl-none" id="header">
-          <div class="rx_icon rotate" id="rx_icon">MENY</div>
-          <div class="title rotate myButton" id="title">MENY</div> 
-      </div>-->
-   <!--   <div class="drawer" id="drawer">
-          <div class="content">
-             <ul class="menu">
-                <div class="container3">
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title">5S</h4>
-                    </div>
-                  </div><br>
-                  <div class="card">
-                    <div class="list-group list-group-flush">
-                      <a href="html/burbyte5s.html" class="list-group-item list-group-item-action">Burbyte</a>
-                      <a href="html/finlanddanmark5s.html" class="list-group-item list-group-item-action">Finland/Danmark</a>
-                      <a href="html/norge5s.html" class="list-group-item list-group-item-action">Norge</a>
-                      <a href="html/pastick5s.html" class="list-group-item list-group-item-action">Påstick</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="container3">
-                    <div class="card">
-                      <div class="card-body">
-                        <h4 class="card-title">SOP</h4>
-                      </div>
-                    </div><br>
-                    <div class="card">
-                      <div class="list-group list-group-flush">
-                        <a href="html/burbytesop.html" class="list-group-item list-group-item-action">Burbyte</a>
-                        <a href="html/finlanddanmarksop.html" class="list-group-item list-group-item-action">Finland/Danmark</a>
-                        <a href="html/norgesop.html" class="list-group-item list-group-item-action">Norge</a>
-                        <a href="html/pasticksop.html" class="list-group-item list-group-item-action">Påstick</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="container3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h4 class="card-title">Lathundar</h4>
-                        </div>
-                      </div><br>
-                      <div class="card">
-                        <div class="list-group list-group-flush">
-                          <a href="html/lathund_stycke.html" class="list-group-item list-group-item-action">Styckegodshantering</a>
-                          <a href="html/lathund_B2C_utan_EDI.html" class="list-group-item list-group-item-action">Missing EDI B2C</a>
-                        </div>
-                      </div>
-                    </div>
-              </ul>
-          </div>
-      </div> -->
-    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
-      <!--<a class="navmenu-brand" href="index.html">LEAN</a> -->
-      <!--<a class="navmenu-brand" href="index.html" title="HEM"><span class="glyphicon glyphicon-home small"></span> <b>LEAN</b> HUB JKPG</a>
-      <hr>-->
-      <ul class="nav navmenu-nav flex-column">    
-  
-          <div class="container3">
-              <div class="card">
-                <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action disabled"><font size ="4">5Ser</font></a>
-                  <a href="html/burbyte5s.html" class="list-group-item list-group-item-action">Burbyte</a>
-                  <a href="html/finlanddanmark5s.html" class="list-group-item list-group-item-action">Finland/Danmark</a>
-                  <a href="html/norge5s.html" class="list-group-item list-group-item-action">Norge</a>
-                  <a href="html/pastick5s.html" class="list-group-item list-group-item-action">Påstick</a>
-                </div>
-              </div>
-            </div>
-            <div class="container3">
-                <div class="card">
-                  <div class="list-group list-group-flush">
-                      <a class="list-group-item disabled"><font size ="4">SOPar</font></a>
-                    <a href="html/burbyte1sop.html" class="list-group-item list-group-item-action">Burbyte</a>
-                    <a href="html/finlanddanmarksop.html" class="list-group-item list-group-item-action">Finland/Danmark</a>
-                    <a href="html/norgesop.html" class="list-group-item list-group-item-action">Norge</a>
-                    <a href="html/pasticksop.html" class="list-group-item list-group-item-action">Påstick</a>
-                  </div>
-                </div>
-              </div>
-              <div class="container3">
-                  <div class="card">
-                      <a class="list-group-item disabled"><font size ="4">Lathundar</font></a>
-                    <div class="list-group list-group-flush">
-                      <a href="html/lathund_stycke.html" class="list-group-item list-group-item-action">Styckegodshantering</a>
-                      <a href="html/lathund_B2C_utan_EDI.html" class="list-group-item list-group-item-action">Missing EDI B2C</a>
-                    </div>
-                  </div>
-                </div>
-    <header class="navbar navbar-light bg-transparent fixed-top d-none d-md-block">
-      <div class="myButton rotate" type="button" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">MENY
-              </div>
-              
-     <!-- <div class="header d-md-none d-lg-none d-xl-none" id="header">
-        <div class="rx_icon rotate" id="rx_icon">MENY</div>
-        <div class="title rotate myButton" id="title">MENY</div> -->
-    </div>
-    </header>
+
 <!-- /top
     <header class="navbar navbar-light bg-transparent fixed-bottom d-md-none d-lg-none d-xl-none">
         <div class="myButton rotate" type="button" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">MENY
@@ -170,7 +73,7 @@
      
 
  
-        <div class="container">
+        <div class="container" style="margin-top: 100px;">
           <div class="row">
               <div class="col-12">
                   <h1 style="float:left">LEAN<font color=#69bc46>.</font></h1>
@@ -241,7 +144,7 @@
                 <div class="col-12" style="margin-top: -30px" data-width="100%">
       
                   <label style="margin-left:2px;">Work smarter, not harder.</label>
-                    <select data-width="96%" class="selectpicker" multiple data-live-search="true" onchange="location = this.value;" title="Search">
+                    <select data-width="95%" class="selectpicker" multiple data-live-search="true" onchange="location = this.value;" title="Search">
                       <optgroup label="5S">
                         <option value="/html/eng_burbyte15s.html" data-tokens="packages cage driving 5s" data-subtext="5S">Cage driving</option>
                         <option value="/html/eng_dagtid15s.html" data-tokens="pallet daytime 1 5s" data-subtext="5S">Daytime 1</option>
@@ -249,7 +152,7 @@
                         <option value="/html/eng_dagtidsortfi5s.html" data-tokens="packages sorter sorting finland daytime 5s" data-subtext="5S">Daytime - Finland sorting</option>
                         <option value="/html/eng_dagtidsupport5s.html" data-tokens="packages pallet support daytime 5s" data-subtext="5S">Daytime support</option>
                         <option value="/html/eng_emb5s.html" data-tokens="packages emb 5s" data-subtext="5S">EMB</option>
-                        <option value="/html/eng_embpall5s.html" data-tokens="packages emb pallet 5s" data-subtext="5S">EMB palletproduktion</option>
+                        <option value="/html/eng_embpall5s.html" data-tokens="packages emb pallet 5s" data-subtext="5S">EMB pallet production</option>
                         <option value="/html/eng_finlanddanmark5s.html" data-tokens="pallet finland danmark loading 5s" data-subtext="5S">Finland / Denmark</option>
                         <option value="/html/eng_finlanddanmarksupport5s.html" data-tokens="pallet finland danmark support 5s" data-subtext="5S">Finland / Denmark support</option>
                         <option value="/html/eng_pastick5s.html" data-tokens="packages forwarder 5s" data-subtext="5S">Forwarder</option>
@@ -292,7 +195,7 @@
                             <option value="/html/eng_lathund_stycke.html" data-tokens="pallet freight goods handling SOP" data-subtext="SOP">Freight goods handling</option>
                         </optgroup>
                       </select>
-                    <button data-width="4%" type="button" class="btn bg-light"><a href="index_eng.html"><font color="#6c757d">&#8634;</font></a></button>
+                    <button data-width="4%" type="button" class="retur"><a href="index_eng.html"><font color="#6c757d">&#8634;</font></a></button>
                 </div>
           </div>
       </div>
