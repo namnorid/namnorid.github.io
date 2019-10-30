@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../images/fav.png">
+
+  <title>Gatehouse 5S</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css'>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link href="../css/jasny-bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/swipe.css">
+  <link rel="stylesheet" href="../css/bootstrap-select.min-online.css">
+  <!-- Custom styles for this template -->
+  <!--<link href="../css/navmenu-push.css" rel="stylesheet"> -->
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <header class="navbar navbar-light bg-transparent fixed-top d-none d-md-block">
+    <div class="row">
+      <div class="col">
+        <ul class="pagination justify" style="margin:10px 0">
+          <select data-width="95px" class="selectpicker" multiple data-live-search="true"
+            onchange="location = this.value;" title="Search">
+            <optgroup label="5S">
+              <option value="eng_burbyte15s.html" data-tokens="packages cage driving 5s" data-subtext="5S">Cage driving</option>
+              <option value="eng_dagtid15s.html" data-tokens="pallet daytime 1 5s" data-subtext="5S">Daytime 1</option>
+              <option value="eng_dagtidlastnfi5s.html" data-tokens="pallet loader loading finland daytime 5s" data-subtext="5S">Daytime - Finland loading</option>
+              <option value="eng_dagtidsortfi5s.html" data-tokens="packages sorter sorting finland daytime 5s" data-subtext="5S">Daytime - Finland sorting</option>
+              <option value="eng_dagtidsupport5s.html" data-tokens="packages pallet support daytime 5s" data-subtext="5S">Daytime support</option>
+              <option value="eng_emb5s.html" data-tokens="packages emb 5s" data-subtext="5S">EMB</option>
+              <option value="eng_embpall5s.html" data-tokens="packages emb pallet 5s" data-subtext="5S">EMB pallet production</option>
+              <option value="eng_finlanddanmark5s.html" data-tokens="pallet finland danmark loading 5s" data-subtext="5S">Finland / Denmark</option>
+              <option value="eng_finlanddanmarksupport5s.html" data-tokens="pallet finland danmark support 5s" data-subtext="5S">Finland / Denmark support</option>
+              <option value="eng_pastick5s.html" data-tokens="packages forwarder 5s" data-subtext="5S">Forwarder</option>
+              <option value="eng_grindstuga5s.html" data-tokens="gatehouse 5s" data-subtext="5S">Gatehouse</option>
+              <option value="eng_infeed5s.html" data-tokens="packages infeed 5s" data-subtext="5S">Infeed</option>
+              <option value="eng_lastare15s.html" data-tokens="pallet loader loading 5s" data-subtext="5S">Loader</option>
+              <option value="eng_norge5s.html" data-tokens="pallet norway loading 5s" data-subtext="5S">Norway</option>
+              <option value="eng_oe5s.html" data-tokens="packages oe 5s" data-subtext="5S">OE - Other Export</option>
+              <option value="eng_palldistr15s.html" data-tokens="pallet pallet distributor 5s" data-subtext="5S">Pallet distributor</option>
+              <option value="eng_pallhanterare5s.html" data-tokens="pallet pallet handler 5s" data-subtext="5S">Pallet handler</option>
+              <option value="eng_rejekt5s.html" data-tokens="packages reject station 5s" data-subtext="5S">Reject station</option>
+              <option value="eng_sortershort5s.html" data-tokens="packages sorter sorting short side 5s" data-subtext="5S">Sorter short side</option>
+              <option value="eng_sorterlong5s.html" data-tokens="packages sorter sorting long side 5s" data-subtext="5S">Sorter long side</option>
+              <option value="eng_lossare15s.html" data-tokens="pallet unloader unloading 5s" data-subtext="5S">Unloader</option>
+              <optgroup label="SOP">
+              <option value="eng_burbyte1sop.html" data-tokens="packages cage driving SOP" data-subtext="SOP">Cage driving</option>
+              <option value="eng_dagtid1sop.html" data-tokens="pallet daytime 1 SOP" data-subtext="SOP">Daytime 1</option>
+              <option value="eng_dagtidlastnfisop.html" data-tokens="pallet loader loading finland daytime SOP" data-subtext="SOP">Daytime - Finland loading</option>
+              <option value="eng_dagtidsortfisop.html" data-tokens="packages sorter sorting finland daytime SOP" data-subtext="SOP">Daytime - Finland sorting</option>
+              <option value="eng_dagtidsupportsop.html" data-tokens="packages pallet support daytime SOP" data-subtext="SOP">Daytime support</option>
+              <option value="eng_embsop.html" data-tokens="packages emb SOP" data-subtext="SOP">EMB</option>
+              <option value="eng_embpallsop.html" data-tokens="packages emb pallet SOP" data-subtext="SOP">EMB pallet production</option>
+              <option value="eng_finlanddanmarksop.html" data-tokens="pallet finland denmark loading SOP" data-subtext="SOP">Finland / Denmark</option>
+              <option value="eng_finlanddanmarksupportsop.html" data-tokens="pallet finland denmark support SOP" data-subtext="SOP">Finland / Denmark support</option>
+              <option value="eng_pasticksop.html" data-tokens="packages forwarder SOP" data-subtext="SOP">Forwarder</option>
+              <option value="eng_grindstugasop.html" data-tokens="gatehouse SOP" data-subtext="SOP">Gatehouse</option>
+              <option value="eng_infeedsop.html" data-tokens="packages infeed SOP" data-subtext="SOP">Infeed</option>
+              <option value="eng_lastare1sop.html" data-tokens="pallet loader loading sop" data-subtext="SOP">Loader</option>
+              <option value="eng_norgesop.html" data-tokens="pallet norway loading SOP" data-subtext="SOP">Norway</option>
+              <option value="eng_oesop.html" data-tokens="packages oe sop" data-subtext="SOP">OE - Other Export</option>
+              <option value="eng_palldistr1sop.html" data-tokens="pallet pallet distributor sop" data-subtext="SOP">Pallet distributor</option>
+              <option value="eng_pallhanteraresop.html" data-tokens="pallet pallet handler sop" data-subtext="SOP">Pallet handler</option>
+              <option value="eng_rejektsop.html" data-tokens="packages reject station SOP" data-subtext="SOP">Reject station</option>
+              <option value="eng_sortershortsop.html" data-tokens="packages sorter sorting short side SOP" data-subtext="SOP">Sorter short side</option>
+              <option value="eng_sorterlongsop.html" data-tokens="packages sorter sorting long side SOP" data-subtext="SOP">Sorter long side</option>
+              <option value="eng_lossare1sop.html" data-tokens="pallet unloader unloading sop" data-subtext="SOP">Unloader</option>
+              <optgroup label="Quick guides">
+                  <option value="eng_lathund_B2C_utan_EDI.html" data-tokens="packages guide B2C missing without EDI SOP" data-subtext="SOP">B2C missing EDI</option>
+                  <option value="eng_lathund_lastbarare_infocare.html" data-tokens="packages guide load carrier Infocare SOP" data-subtext="SOP">Create load carrier for Infocare</option>
+                  <option value="eng_lathund_stycke.html" data-tokens="pallet guide freight goods handling SOP" data-subtext="SOP">Freight goods handling</option>
+              </optgroup>
+            </select>
+          <li class="page-item"><a class="page-link" href="../index_eng.html">Home</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <!--<ul class="pagination justify-content-end" style="margin:10px 0">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Cage driving</a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="eng_burbyte1sop.html">1</a></li>
+                      <li class="page-item"><a class="page-link" href="eng_burbyte2sop.html">2</a></li>
+                      <li class="page-item"><a class="page-link" href="eng_burbyte3sop.html">3</a></li>
+                      <li class="page-item"><a class="page-link" href="eng_burbyte4sop.html">4</a></li>
+                    </ul>-->
+        <ul class="pagination justify-content-end" style="margin:10px 0">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Go to</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="eng_grindstugasop.html">Gatehouse SOP</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="myButton rotate" type="button" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">MENY-->
+    <!--</div>-->
+
+    <!-- <div class="header d-md-none d-lg-none d-xl-none" id="header">
+      <div class="rx_icon rotate" id="rx_icon">MENY</div>
+      <div class="title rotate myButton" id="title">MENY</div> -->
+  </header>
+  <!-- /top -->
+
+  <header class="navbar navbar-light bg-transparent fixed-bottom d-md-none d-lg-none d-xl-none">
+
+    <ul class="pagination" style="margin:10px 0">
+      <select data-width="95px" class="selectpicker" multiple data-live-search="true" onchange="location = this.value;"
+        title="Search">
+        <optgroup label="5S">
+          <option value="eng_burbyte15s.html" data-tokens="packages cage driving 5s" data-subtext="5S">Cage driving</option>
+          <option value="eng_dagtid15s.html" data-tokens="pallet daytime 1 5s" data-subtext="5S">Daytime 1</option>
+          <option value="eng_dagtidlastnfi5s.html" data-tokens="pallet loader loading finland daytime 5s" data-subtext="5S">Daytime - Finland loading</option>
+          <option value="eng_dagtidsortfi5s.html" data-tokens="packages sorter sorting finland daytime 5s" data-subtext="5S">Daytime - Finland sorting</option>
+          <option value="eng_dagtidsupport5s.html" data-tokens="packages pallet support daytime 5s" data-subtext="5S">Daytime support</option>
+          <option value="eng_emb5s.html" data-tokens="packages emb 5s" data-subtext="5S">EMB</option>
+          <option value="eng_embpall5s.html" data-tokens="packages emb pallet 5s" data-subtext="5S">EMB pallet production</option>
+          <option value="eng_finlanddanmark5s.html" data-tokens="pallet finland danmark loading 5s" data-subtext="5S">Finland / Denmark</option>
+          <option value="eng_finlanddanmarksupport5s.html" data-tokens="pallet finland danmark support 5s" data-subtext="5S">Finland / Denmark support</option>
+          <option value="eng_pastick5s.html" data-tokens="packages forwarder 5s" data-subtext="5S">Forwarder</option>
+          <option value="eng_grindstuga5s.html" data-tokens="gatehouse 5s" data-subtext="5S">Gatehouse</option>
+          <option value="eng_infeed5s.html" data-tokens="packages infeed 5s" data-subtext="5S">Infeed</option>
+          <option value="eng_lastare15s.html" data-tokens="pallet loader loading 5s" data-subtext="5S">Loader</option>
+          <option value="eng_norge5s.html" data-tokens="pallet norway loading 5s" data-subtext="5S">Norway</option>
+          <option value="eng_oe5s.html" data-tokens="packages oe 5s" data-subtext="5S">OE - Other Export</option>
+          <option value="eng_palldistr15s.html" data-tokens="pallet pallet distributor 5s" data-subtext="5S">Pallet distributor</option>
+          <option value="eng_pallhanterare5s.html" data-tokens="pallet pallet handler 5s" data-subtext="5S">Pallet handler</option>
+          <option value="eng_rejekt5s.html" data-tokens="packages reject station 5s" data-subtext="5S">Reject station</option>
+          <option value="eng_sortershort5s.html" data-tokens="packages sorter sorting short side 5s" data-subtext="5S">Sorter short side</option>
+          <option value="eng_sorterlong5s.html" data-tokens="packages sorter sorting long side 5s" data-subtext="5S">Sorter long side</option>
+          <option value="eng_lossare15s.html" data-tokens="pallet unloader unloading 5s" data-subtext="5S">Unloader</option>
+          <optgroup label="SOP">
+          <option value="eng_burbyte1sop.html" data-tokens="packages cage driving SOP" data-subtext="SOP">Cage driving</option>
+          <option value="eng_dagtid1sop.html" data-tokens="pallet daytime 1 SOP" data-subtext="SOP">Daytime 1</option>
+          <option value="eng_dagtidlastnfisop.html" data-tokens="pallet loader loading finland daytime SOP" data-subtext="SOP">Daytime - Finland loading</option>
+          <option value="eng_dagtidsortfisop.html" data-tokens="packages sorter sorting finland daytime SOP" data-subtext="SOP">Daytime - Finland sorting</option>
+          <option value="eng_dagtidsupportsop.html" data-tokens="packages pallet support daytime SOP" data-subtext="SOP">Daytime support</option>
+          <option value="eng_embsop.html" data-tokens="packages emb SOP" data-subtext="SOP">EMB</option>
+          <option value="eng_embpallsop.html" data-tokens="packages emb pallet SOP" data-subtext="SOP">EMB pallet production</option>
+          <option value="eng_finlanddanmarksop.html" data-tokens="pallet finland denmark loading SOP" data-subtext="SOP">Finland / Denmark</option>
+          <option value="eng_finlanddanmarksupportsop.html" data-tokens="pallet finland denmark support SOP" data-subtext="SOP">Finland / Denmark support</option>
+          <option value="eng_pasticksop.html" data-tokens="packages forwarder SOP" data-subtext="SOP">Forwarder</option>
+          <option value="eng_grindstugasop.html" data-tokens="gatehouse SOP" data-subtext="SOP">Gatehouse</option>
+          <option value="eng_infeedsop.html" data-tokens="packages infeed SOP" data-subtext="SOP">Infeed</option>
+          <option value="eng_lastare1sop.html" data-tokens="pallet loader loading sop" data-subtext="SOP">Loader</option>
+          <option value="eng_norgesop.html" data-tokens="pallet norway loading SOP" data-subtext="SOP">Norway</option>
+          <option value="eng_oesop.html" data-tokens="packages oe sop" data-subtext="SOP">OE - Other Export</option>
+          <option value="eng_palldistr1sop.html" data-tokens="pallet pallet distributor sop" data-subtext="SOP">Pallet distributor</option>
+          <option value="eng_pallhanteraresop.html" data-tokens="pallet pallet handler sop" data-subtext="SOP">Pallet handler</option>
+          <option value="eng_rejektsop.html" data-tokens="packages reject station SOP" data-subtext="SOP">Reject station</option>
+          <option value="eng_sortershortsop.html" data-tokens="packages sorter sorting short side SOP" data-subtext="SOP">Sorter short side</option>
+          <option value="eng_sorterlongsop.html" data-tokens="packages sorter sorting long side SOP" data-subtext="SOP">Sorter long side</option>
+          <option value="eng_lossare1sop.html" data-tokens="pallet unloader unloading sop" data-subtext="SOP">Unloader</option>
+          <optgroup label="Quick guides">
+              <option value="eng_lathund_B2C_utan_EDI.html" data-tokens="packages guide B2C missing without EDI SOP" data-subtext="SOP">B2C missing EDI</option>
+              <option value="eng_lathund_lastbarare_infocare.html" data-tokens="packages guide load carrier Infocare SOP" data-subtext="SOP">Create load carrier for Infocare</option>
+              <option value="eng_lathund_stycke.html" data-tokens="pallet guide freight goods handling SOP" data-subtext="SOP">Freight goods handling</option>
+          </optgroup>
+        </select>
+      <li class="page-item"><a class="page-link" href="../index_eng.html">Home</a></li>
+    </ul>
+    <hr>
+    <h6></h6>
+    <div class="col">
+      <ul class="pagination justify-content-end" style="margin:10px 0">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Go to</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="eng_grindstugasop.html">Gatehouse SOP</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+
+  </header>
+
+  <section class="py-5">
+    <div class="container">
+
+      <h2 class="text-center">
+        <font color="#69bc46">Gatehouse 5S</font>
+      </h2>
+      <div class="table-responsive" style='margin-left:5pt'>
+        <table class="table table-sm table-borderless">
+          <!--<thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>-->
+          <tbody>
+            <tr class="d-flex">
+              <!--<th scope="row">1</th>-->
+              <td class="col-xs-2 col-sm-4 col-md-2">Responsible:</th>
+              <td class="col-xs-2 col-sm-6 col-md-6">Daniel Namnori</td>
+
+
+            </tr>
+          <tbody>
+            <tr class="d-flex">
+              <!--<th scope="row">1</th>-->
+              <td class="col-xs-2 col-sm-4 col-md-2">Assignment:</th>
+              <td class="col-xs-2 col-sm-6 col-md-6">Traffic control</td>
+
+
+            </tr>
+          <tbody>
+            <tr class="d-flex">
+              <!--<th scope="row">1</th>-->
+              <td class="col-xs-2 col-sm-4 col-md-2">Section:</th>
+              <td class="col-xs-2 col-sm-6 col-md-6">HUB – Yard logistics</td>
+
+
+            </tr>
+            <tr class="d-flex">
+              <!--<th scope="row">2</th> -->
+
+              <td class="col-xs-2 col-sm-4 col-md-2">Process:</th>
+              <td class="col-xs-2 col-sm-6 col-md-6">Arrival and departing linehaul</td>
+
+
+            </tr>
+            <tr class="d-flex">
+              <!--<th scope="row">2</th> -->
+              <td class="col-xs-2 col-sm-4 col-md-2">Uppdaterad:</th>
+              <td class="col-xs-2 col-sm-6 col-md-6">2019-09-18</td>
+
+
+            </tr>
+            <tr class="d-flex">
+              <!--<th scope="row">2</th> -->
+              <td class="col-sm-3">
+                </th>
+              <td class="col-sm-6"></td>
+            </tr>
+            <tr>
+              <!--<th scope="row">3</th> -->
+              <td colspan="4"><em>5S: <a class="text-danger">S</a>ort, <a class="text-danger">S</a>et in order, <a
+                    class="text-danger">S</a>hine, <a class="text-danger">S</a>tandardize, <a
+                    class="text-danger">S</a>ustain
+                  om</em>
+                <hr>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <a style='margin-left:10pt'><strong>Equipment</strong><br></a>
+
+      <p style='margin-bottom:2.0pt;margin-left:21pt;text-indent:-11.0pt'>-&nbsp;&nbsp;Clothing: Regular Bring uniform and reflex vest on the terminal yard. Extra warm layer and jacket if needed.</p>
+
+      <p style='margin-bottom:2.0pt;margin-left:21pt;text-indent:-11.0pt'>-&nbsp;&nbsp;Communication equipment: Motorola walkie-talkie marked with number <b>25</b>. The Motorola walkie-talkie is charged in the office.</p>
+
+      <p style='margin-bottom:2.0pt;margin-left:21pt;text-indent:-11.0pt'>-&nbsp;&nbsp;Computers: Left computer is for the control of the Beam/gates for entrance to the yard. Right computer is for use with Citrix system, so we use this as an ordinary computer with access to filesystem and applications. If the computers have restarted contact a Team leader to login.
+      </p>
+
+      <p style='margin-bottom:2.0pt;margin-left:21pt;text-indent:-11.0pt'>-&nbsp;&nbsp;Forklift: Non available.</p>
+
+      <p style='margin-bottom:2.0pt;margin-left:21pt;text-indent:-11.0pt'>-&nbsp;&nbsp;Other equipment: Ballpoint pen, knife, marker, bolt cutter.</p>
+
+      <p style='margin-bottom:15.0pt;margin-left:21pt;text-indent:-11.0pt'>-&nbsp;&nbsp;If other equipment is missing, please contact Team leader.</p>
+
+      <a style='margin-left:10pt'><strong>Workstation</strong><br></a>
+      <p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:.05pt;
+        margin-bottom:15pt;margin-left:10pt'>The primary workstation is at the main entrance of the terminal area (fig. 1.) Open the door by placing the card on the card reader and entering the password. All the seals are thrown in a box just to the left, plain debris should be disposed of in the dustbin to the right (see picture of the workstation.)
+For a good working environment, the workstation is equipped with a microwave and coffee machine. 
+
+
+      </p>
+
+      <a style='margin-left:10pt'><strong>Cleaning</strong><br></a>
+
+      <p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:.05pt;
+        margin-bottom:2.0pt;margin-left:10pt'>Daily cleaning (see fig. 2 how tidy the area should look like):</p>
+        <p style='margin-right:.05pt;text-indent:-22pt;margin-left:32pt;margin-bottom:2pt'>1.<span
+          style='margin-left:13pt'></span>All rubbish is thrown in the trash.
+      </p>
+      <p style='margin-right:.05pt;text-indent:-22pt;margin-left:32pt;margin-bottom:2pt'>2.<span
+          style='margin-left:13pt'></span>Use the floor mop / brush to clean the floor.
+      </p>
+      <p style='margin-right:.05pt;text-indent:-22pt;margin-left:32pt;margin-bottom:2pt'>3.<span
+          style='margin-left:13pt'></span>Close all windows and turn off the TV.
+      </p>
+      <p style='margin-right:.05pt;text-indent:-22pt;margin-left:32pt;margin-bottom:2pt'>4.<span
+          style='margin-left:13pt'></span>Put the Motorola Walkie Talkie on charge.
+      </p>
+      <p style='margin-right:.05pt;text-indent:-22pt;margin-left:32pt;margin-bottom:2pt'>5.<span
+        style='margin-left:13pt'></span>Go to the main office and fill in the Linehaul report.
+    </p>
+    <p style='margin-right:.05pt;text-indent:-22pt;margin-left:32pt;margin-bottom:2pt'>6.<span
+        style='margin-left:13pt'></span>When the Linehaul Report is completed and saved after normal production, help others complete their cleaning areas.
+    </p>
+    <p style='margin-right:.05pt;text-indent:-22pt;margin-left:32pt;margin-bottom:2pt'><a class="text-danger">Cleaning every week: </a> Empty the box with seals in the metal container and empty the bin in combustible garbage.
+  </p>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div class="container">
+      <div class="row justify-content-center text-center my-3">
+        <!--<div class="col-12">
+						<h3>Lightbox2</h3>
+						<p>An example of Bootstrap 4 with Lightbox2 gallery</p>
+					</div> -->
+      </div>
+      <div class="row justify-content-center text-center">
+          <div class="col-md-4 mb-3">
+              <a href="../images/5s_sop/grindstuga5.jpg" data-lightbox="gallery" data-title="TV"
+                title="Klicka på bilden för att förstora">
+                <img src="../images/5s_sop/grindstuga5.jpg" class="img-fluid img-thumbnail" alt="TV">
+              </a>
+              <div class="card-body">
+                <p class="text-muted card-text">TV</p>
+              </div>
+            </div> 
+        <div class="col-md-4 mb-3">
+              <a href="../images/5s_sop/grindstuga3.jpg" data-lightbox="gallery" data-title="Barrier / gate computer"
+                title="Klicka på bilden för att förstora">
+                <img src="../images/5s_sop/grindstuga3.jpg" class="img-fluid img-thumbnail" alt="Barrier / gate computer">
+              </a>
+              <div class="card-body">
+                <p class="text-muted card-text">Barrier / gate computer</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <a href="../images/5s_sop/grindstuga4.jpg" data-lightbox="gallery" data-title="Citrix computer"
+                title="Klicka på bilden för att förstora">
+                <img src="../images/5s_sop/grindstuga4.jpg" class="img-fluid img-thumbnail" alt="Citrix computer">
+              </a>
+              <div class="card-body">
+                <p class="text-muted card-text">Citrix computer</p>
+              </div>
+            </div>
+        <div class="col-md-4 mb-3">
+          <a href="../images/5s_sop/grindstuga1.png" data-lightbox="gallery"
+            data-title="Gatehouse" title="Klicka på bilden för att förstora">
+            <img src="../images/5s_sop/grindstuga1.png" class="img-fluid img-thumbnail"
+              alt="Gatehouse">
+          </a>
+          <div class="card-body">
+            <h6><a>Fig. 1</a></h6>
+            <p class="text-muted card-text">Gatehouse</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <a href="../images/5s_sop/grindstuga2.jpg" data-lightbox="gallery" data-title="Cleaned area"
+            title="Klicka på bilden för att förstora">
+            <img src="../images/5s_sop/grindstuga2.jpg" class="img-fluid img-thumbnail" alt="Cleaned area">
+          </a>
+          <div class="card-body">
+              <h6><a>Fig. 2</a></h6>
+            <p class="text-muted card-text" style='margin-bottom:50pt'>Cleaned area</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="../js/jasny-bootstrap.min.js"></script>
+  <script src="../js/offcanvas.js"></script>
+  <script src="../js/script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js'></script>
+  <script  src="../js/swipe.js"></script>
+</body>
+
+</html>
