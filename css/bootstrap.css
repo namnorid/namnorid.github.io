@@ -5363,7 +5363,8 @@ input[type=submit].btn-block {
 
 .nav-link:focus,
 .nav-link:hover {
-    text-decoration: none
+    text-decoration: none;
+    color: black;
 }
 
 .nav-link.disabled {
@@ -5900,6 +5901,37 @@ input[type=submit].btn-block {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
 }
 
+.card2 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+/*  border: 1px solid rgba(0, 0, 0, .125);*/
+    /*border-right: 1px solid rgba(0, 0, 0, .125);*/
+    border-radius: 0rem;
+/*    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);*/
+}
+
+.card3 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+/*  border: 1px solid rgba(0, 0, 0, .125);*/
+    border-radius: 0rem;
+/*    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);*/
+}
+
 .card>hr {
     margin-right: 0;
     margin-left: 0
@@ -6226,6 +6258,13 @@ input[type=submit].btn-block {
     color: #ffffff;
     text-decoration: none;
     background-color: #69bc46;
+    border-color: transparent
+}
+
+.page-link2:hover {
+    z-index: 2;
+    color: #000;
+    text-decoration: none;
     border-color: transparent
 }
 
@@ -11173,4 +11212,10 @@ a.text-dark:hover {
 
 .retur:not(:disabled):not(.disabled) {
     cursor: pointer
+}
+.footer {
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center!important;
+    background: #f5f5f5 
 }
