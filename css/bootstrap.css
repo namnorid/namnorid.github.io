@@ -4427,6 +4427,25 @@ input[type=submit].btn-block {
     border-left: .3em solid transparent*/
 }
 
+.dropdown-toggle2::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0em;
+    /*margin-left: .255em;*/
+    margin-right: 1em;
+    vertical-align: .255em;
+    content: "";
+    border: none;
+    font: normal normal normal 12px/1 'Glyphicons Halflings';
+    content: "\e260";
+    vertical-align: 0;
+    /*border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent*/
+}
+
 #small_glyphicon {
     font-size: 13px; /* or lower */
 }
@@ -4442,8 +4461,9 @@ input[type=submit].btn-block {
     z-index: 1000;
     display: none;
     float: left;
-    min-width: 10rem;
-    padding: .5rem 0;
+    /*min-width: 12rem;*/
+    width:auto;
+    padding: 0rem 0;
     margin: .125rem 0 0;
     font-size: 1rem;
     color: #212529;
@@ -4452,7 +4472,7 @@ input[type=submit].btn-block {
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: .25rem
+    border-radius: .0rem;
 }
 
 .dropdown-menu-right {
@@ -4464,7 +4484,7 @@ input[type=submit].btn-block {
     top: auto;
     bottom: 100%;
     margin-top: 0;
-    margin-bottom: .125rem
+    margin-bottom: 0rem
 }
 
 .dropup .dropdown-toggle::after {
@@ -4479,6 +4499,30 @@ input[type=submit].btn-block {
     border: none;
     font: normal normal normal 12px/1 'Glyphicons Halflings';
     content: "\e003";
+    vertical-align: 0;
+    /*display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0;
+    border-right: .3em solid transparent;
+    border-bottom: .3em solid;
+    border-left: .3em solid transparent*/
+}
+.dropup .dropdown-toggle2::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0em;
+    /*margin-left: .255em;*/
+    margin-right: 1em;
+    vertical-align: .255em;
+    content: "";
+    border: none;
+    font: normal normal normal 12px/1 'Glyphicons Halflings';
+    content: "\e260";
     vertical-align: 0;
     /*display: inline-block;
     width: 0;
@@ -4598,7 +4642,7 @@ input[type=submit].btn-block {
 .dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
-    background-color: #f8f9fa;
+    background-color: #d1d1d1;
     border-color: #69bc46;
     box-shadow: none;
 }
@@ -4607,7 +4651,7 @@ input[type=submit].btn-block {
 .dropdown-item:active {
     color: #16181b;
     text-decoration: none;
-    background-color: #f8f9fa;
+    background-color: #d1d1d1;
     border-color: #69bc46;
     box-shadow: transparent;    
 }
@@ -6252,12 +6296,30 @@ input[type=submit].btn-block {
     border: 1px solid #dee2e6;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .06);
 }
+.page-link3 {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .06);
+}
 
 .page-link:hover {
     z-index: 2;
     color: #ffffff;
     text-decoration: none;
     background-color: #69bc46;
+    border-color: transparent
+}
+.page-link3:hover {
+    z-index: 2;
+    color: #000000;
+    text-decoration: none;
+    background-color: #f8f9fa;
     border-color: transparent
 }
 
@@ -6273,6 +6335,11 @@ input[type=submit].btn-block {
     outline: 0;
     box-shadow: 0 0 0 .2rem rgba(0, 0, 0, 0.0)
 }
+.page-link3:focus {
+    z-index: 2;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 0, 0, 0.0)
+}
 
 .page-link:not(:disabled):not(.disabled) {
     cursor: pointer
@@ -6284,6 +6351,9 @@ input[type=submit].btn-block {
     border-bottom-left-radius: .0rem
 }
 .page-item .page-link:hover {
+    color: #ffffff;
+}
+.page-item .page-link3:hover {
     color: #ffffff;
 }
 
