@@ -4450,6 +4450,11 @@ input[type=submit].btn-block {
     font-size: 13px; /* or lower */
 }
 
+#small_glyphicon:hover {
+    color: #000;
+    border: none;
+}
+
 .dropdown-toggle:empty::after {
     margin-left: 0
 }
@@ -5485,8 +5490,10 @@ input[type=submit].btn-block {
     display: block
 }
 
+
+
 .navbar {
-    position: relative;
+    position: absolute;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -5495,7 +5502,10 @@ input[type=submit].btn-block {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: .5rem 1rem
+    padding: .5rem .5rem;
+    -webkit-box-shadow: inset 0 0.3px 0.3px rgb(150, 150, 150, 1);
+    -moz-box-shadow: inset 0 0.3px 0.3px rgb(150, 150, 150, 1);
+    box-shadow: inset 0 0.3px 0.3px rgb(150, 150, 150, 1);
 }
 
 .navbar>.container,
@@ -5561,21 +5571,32 @@ input[type=submit].btn-block {
 }
 
 .navbar-toggler {
+    background-color: transparent;
+    border: none;
+    /*border-radius: .25rem;
     padding: .25rem .75rem;
     font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: .25rem
+    line-height: 1;*/
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:hover {
-    text-decoration: none
+    z-index: 2;
+    color: #000;
+    text-decoration: none;
+    border-color: transparent
 }
+
 
 .navbar-toggler:not(:disabled):not(.disabled) {
     cursor: pointer
+}
+
+.navbar-toggler-icon:hover {
+    z-index: 2;
+    color: #000;
+    text-decoration: none;
+    border-color: transparent
 }
 
 .navbar-toggler-icon {
@@ -6296,6 +6317,21 @@ input[type=submit].btn-block {
     border: 1px solid #dee2e6;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .06);
 }
+.page-link1 {
+    color: #6c757d;
+}
+
+.page-link2 {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #6c757d;
+    /*background-color: #fff;
+    border: 1px solid #dee2e6;*/
+  
+}
 .page-link3 {
     position: relative;
     display: block;
@@ -6306,6 +6342,9 @@ input[type=submit].btn-block {
     background-color: #fff;
     border: 1px solid #dee2e6;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .06);
+}
+.page-link4 {
+    color: #6c757d;
 }
 .page-link5 {
     position: relative;
@@ -6326,7 +6365,20 @@ input[type=submit].btn-block {
     background-color: #69bc46;
     border-color: transparent
 }
+.page-link1:hover {
+    z-index: 2;
+    color: #000;
+    text-decoration: none;
+    border-color: transparent
+}
 .page-link3:hover {
+    z-index: 2;
+    color: #000000;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    border-color: transparent
+}
+.page-link4:hover {
     z-index: 2;
     color: #000000;
     text-decoration: none;

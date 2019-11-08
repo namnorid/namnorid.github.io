@@ -1,4 +1,12 @@
-
+jQuery(function($) {
+    $('#swapFire').on('click', function() {
+      var $el = $(this),
+        textNode = this.lastChild;
+      $el.find('span').toggleClass('glyphicon-triangle-top glyphicon-triangle-bottom');
+      textNode.nodeValue = '' + ($el.hasClass('showFire') ? '' : '')
+      $el.toggleClass('showFire');
+    });
+  });
 
 lightbox.option({
 	'albumLabel':	"picture %1 of %2",

@@ -21,12 +21,27 @@ select.selectpicker {
     text-align: right;
     white-space: nowrap;
 }
+.bootstrap-select>.dropdown-toggle3 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    white-space: nowrap;
+}
 
 .bootstrap-select>.dropdown-toggle.bs-placeholder {
     color: #6c757d;
     background-color: #fff;
     border: 1px solid #dee2e6;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .06);
+    border-radius: 0 !important;
+    -webkit-border-radius:0 !important;
+}
+.bootstrap-select3>.dropdown-toggle.bs-placeholder {
+    color: #6c757d;
+    background-color: transparent;
+    box-shadow: none;
+    border-color: transparent;
     border-radius: 0 !important;
     -webkit-border-radius:0 !important;
 }
@@ -38,6 +53,18 @@ select.selectpicker {
     color: #ffffff;
     text-decoration: none;
     background-color: #69bc46;
+    border-color: transparent;
+    border-radius: 0 !important;
+    -webkit-border-radius:0 !important;
+}
+
+.bootstrap-select3>.dropdown-toggle.bs-placeholder:active,
+.bootstrap-select3>.dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select3>.dropdown-toggle.bs-placeholder:hover {
+    z-index: 2;
+    color: #000;
+    text-decoration: none;
+    background-color:transparent;
     border-color: transparent;
     border-radius: 0 !important;
     -webkit-border-radius:0 !important;
@@ -79,7 +106,7 @@ select.selectpicker {
     height: 100% !important;
     padding: 0 !important;
     opacity: 0 !important;
-    border: none
+    border: none;
 }
 
 .bootstrap-select>select.mobile-device {
@@ -87,7 +114,7 @@ select.selectpicker {
     left: 0;
     display: block !important;
     width: 100% !important;
-    z-index: 2
+    z-index: 2;
 }
 
 .bootstrap-select.is-invalid .dropdown-toggle,
@@ -119,7 +146,8 @@ select.selectpicker {
 .bootstrap-select.form-control {
     margin-bottom: 0;
     padding: 0;
-    border: none
+    border: none;
+    background: none;
 }
 
 :not(.input-group)>.bootstrap-select.form-control:not([class*=col-]) {
@@ -201,7 +229,7 @@ select.selectpicker {
     top: 0;
     left: 0;
     height: 0 !important;
-    padding: 0 !important
+    padding: 0 !important;
 }
 
 .bootstrap-select.bs-container .dropdown-menu {
@@ -252,9 +280,11 @@ select.selectpicker {
 
 .bootstrap-select .dropdown-menu {
     min-width: 100%;
+    max-height: 90%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
+    margin-bottom: 7.5px;
 }
 
 .bootstrap-select .dropdown-menu>.inner:focus {
@@ -312,14 +342,17 @@ select.selectpicker {
 .bootstrap-select .dropdown-menu .notify {
     position: absolute;
     bottom: 5px;
-    width: 96%;
+    width: 100%;
     margin: 0 2%;
     min-height: 26px;
     padding: 3px 5px;
     background: #f5f5f5;
     border: 1px solid #e3e3e3;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow: inset 0 0.5px 0.5px rgb(150, 150, 150), 1;
+    -moz-box-shadow: inset 0 0.5px 0.5px rgb(150, 150, 150, 1);
+    box-shadow: inset 0 0.5px 0.5px rgb(150, 150, 150, 1);
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);*/
     pointer-events: none;
     opacity: .9;
     -webkit-box-sizing: border-box;

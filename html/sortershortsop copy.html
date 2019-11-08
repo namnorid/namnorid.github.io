@@ -8,7 +8,7 @@
   <meta name="author" content="">
   <link rel="shortcut icon" href="../images/fav.png">
 
-  <title>Sortering långsida SOP</title>
+  <title>Sortering kortsida SOP</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
@@ -77,8 +77,10 @@
           </select>
                       <li class="page-item"><a class="page-link" href="../index.html"><span class="glyphicon glyphicon-home"
             id="small_glyphicon"></span></a></li>
-            <li class="page-item"><a class="page-link5" href="eng_sorterlongsop.html">
-              <img src="../images/gb.png" title="Change language to English" alt="English" style="max-width:22px;border:0;margin-bottom:4px;">
+          <!--<li class="page-item"><a class="page-link" href="eng_sortershortsop.html">Språk&nbsp;&nbsp;<span class="glyphicon glyphicon-flag"
+            id="small_glyphicon"></span></a></li>-->
+            <li class="page-item"><a class="page-link5" href="eng_sortershortsop.html">
+              <img src="../images/gb.png" title="Change language to English" alt="English" style="max-width:22px;border:0;margin-bottom:3px;">
             </a></li>
           </ul>        </div>
           <div class="col">
@@ -86,7 +88,7 @@
             <li class="page-item disabled">
               <a class="page-link" href="#" tabindex="-1">Gå till</a>
             </li>
-            <li class="page-item"><a class="page-link" href="sorterlong5s.html">Sortering långsida 5S</a></li>
+            <li class="page-item"><a class="page-link" href="sortershort5s.html">Sortering kortsida 5S</a></li>
           </ul>
 
       </div></div>
@@ -99,8 +101,10 @@
     </header>
     <!-- /top -->
   
-    <nav class="navbar navbar-expand-md navbar-light fixed-bottom bg-light d-md-none d-lg-none d-xl-none">
-        <select data-width="40px" class="selectpicker form-control bootstrap-select3" multiple data-live-search="true" onchange="location = this.value;" title="">
+    <header class="navbar navbar-light bg-transparent fixed-bottom d-md-none d-lg-none d-xl-none">
+  
+      <ul class="pagination" style="margin:10px 0">
+        <select data-width="40px" class="selectpicker" multiple data-live-search="true" onchange="location = this.value;" title="">
           <optgroup label="5S">
               <option value="burbyte15s.html" data-tokens="paket burbyte 5s" data-subtext="5S">Burbyte</option>
               <option value="dagtid15s.html" data-tokens="pall dagtid 1 5s" data-subtext="5S">Dagtid 1</option>
@@ -151,65 +155,35 @@
                   <option value="lathund_stycke.html" data-tokens="pall lathund styckegodshantering SOP" data-subtext="SOP">Styckegodshantering</option>
               </optgroup>
       </select>
-  
-      <div class="pagination justify-content-end">
-          <li class="page-item"><a class="page-link2" href="sorterlong5s.html"><span class="glyphicon glyphicon-transfer"
-            id="small_glyphicon" style="padding-right: .5rem;"></span></a></li>
-      
+                  <li class="page-item"><a class="page-link" href="../index.html"><span class="glyphicon glyphicon-home"
+            id="small_glyphicon"></span></a></li>
+            <li class="page-item"><a class="page-link5" href="eng_sortershortsop.html">
+              <img src="../images/gb.png" title="Change language to English" alt="English" style="max-width:22px;border:0;margin-bottom:3px;">
+            </a></li>
+      </ul>
+      <hr>
+      <h6></h6>
+      <div class="col">
+        <ul class="pagination justify-content-end" style="margin:10px -13px">
+          <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1"><span class="glyphicon glyphicon-arrow-right"
+                id="small_glyphicon"></span></a>
+          </li>
+          <li class="page-item"><a class="page-link" href="sortershort5s.html">Kortsida 5S</a></li>
+        </ul>
 
-      <button class="navbar-toggler showFire" type="button" id="swapFire" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="glyphicon glyphicon-triangle-top" id="small_glyphicon" style="padding-bottom: 0.35rem;"></span>
-      </span>
-    </button></div>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-           <!-- <li class="nav-item">
-              <a class="nav-link" style="margin-left: 1rem;" href="sortershort5s.html"><span style="font-size: 12px;color: #6d6d6d;">5S</span> Sorter kortsida</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" style="margin-left: 1rem;" href="sortershortsop.html"><span style="font-size: 12px;color: #6d6d6d;">SOP</span> Sorter kortsida<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="margin-left: 1rem;color: #6d6d6d;" href="../index.html"><span class="glyphicon glyphicon-home"
-                id="small_glyphicon"></span> Hem</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="margin-left: 1rem;color: #6d6d6d;" href="eng_sortershortsop.html"><span class="glyphicon glyphicon-globe"
-                id="small_glyphicon"></span> Change language</a>
-            </li>-->
-            <div class="table-responsive" style="margin-left:10px;">
-              <table class="table table-sm table-borderless">
-                <tbody>
-                  <tr>
-                    <td style="color: #6d6d6d;" width="10.4%"><span style="font-size: 12px;color: #6d6d6d;">5S</span></td>
-                    <td><a class="page-link1" href="sorterlong5s.html"> Sortering långsida</a></td>
-                  </tr>
-                  <tr>
-                    <td style="color: #6d6d6d;" width="10.4%"><span style="font-size: 12px;color: #6d6d6d;">SOP</span></td>
-                    <td><a class="page-link1" href="sorterlongsop.html"> Sortering långsida</a></td>
-                  </tr>
-                  <tr>
-                      <td style="color: #6d6d6d;" width="10.4%"><span style="font-size: 12px;color: #6d6d6d;" class="glyphicon glyphicon-home"
-                        id="small_glyphicon"></span></td>
-                      <td><a class="page-link1" href="../index.html"> Hem</a></td>
-                    </tr>
-                  <tr>
-                    <td style="color: #6d6d6d;" width="10.4%"><span style="font-size: 12px;color: #6d6d6d;" class="glyphicon glyphicon-globe"
-                      id="small_glyphicon"></span></td>
-                    <td><a class="page-link1" href="eng_sorterlongsop.html"> <em>English</em></a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </ul>
-        </div>
-      </nav>
+    </div>
+  
+      <hr>
+  
+  
+    </header>
 
 
 <section class="py-5">
   <div class="container">
     <h2 class="text-center">
-      <font color="#69bc46">Sortering långsida SOP</font>
+      <font color="#69bc46">Sortering kortsida SOP</font>
     </h2>
 
     <div class="table-responsive" style='margin-left:5pt'>
@@ -297,7 +271,8 @@
       Postnummerfördelning hittas ovanför avkast (fig. 3.) Felsorterade kollin läggs under avkastet. <u>Var uppmärksam
         på
         avkast med flera sorteringsrikningar. </u>Paket som inte kan identifieras ska placeras under avkastet. <b>ADR/LQ
-        till Visby, samt ADR/LQ till Finland, placeras under avkasten (fig. 6.)</b>
+        till
+        Finland placeras under avkastet (fig. 6.)</b>
       Värdera storleken på kollit. Små kolli och kolli som inte passar på pall, samt tunga paket läggs i bur. Paket som
       är ¼ eller ½ pall storlek sorteras på pall. Värdera efter emballage. OBS! Undantag finns.
     </p>
@@ -337,9 +312,9 @@
   <div class="container">
     <div class="row justify-content-center text-center" style="padding-bottom: 50px;">
       <div class="col-md-10 mb-3">
-        <a href="../images/5s_sop/longside1.png" data-lightbox="gallery" data-title="Avkastområde"
+        <a href="../images/5s_sop/shortside1.png" data-lightbox="gallery" data-title="Avkastområde"
           title="Klicka på bilden för att förstora">
-          <img src="../images/5s_sop/longside1.png" class="img-fluid img-thumbnail" alt="Avkastområde">
+          <img src="../images/5s_sop/shortside1.png" class="img-fluid img-thumbnail" alt="Avkastområde">
         </a>
         <div class="card-body">
           <h6><a>Fig. 1</a></h6>
@@ -406,7 +381,7 @@
         </div>
       </div>
       <div class="col-md-2 mb-3">
-        <a href="../images/5s_sop/shortside8.jpg" data-lightbox="gallery" data-title="Fullgodtt staplad pall och bur"
+        <a href="../images/5s_sop/shortside8.jpg" data-lightbox="gallery" data-title="Fullgott staplad pall och bur"
           title="Klicka på bilden för att förstora">
           <img src="../images/5s_sop/shortside8.jpg" class="img-fluid img-thumbnail" alt="Fullgott staplad pall och bur">
         </a>
