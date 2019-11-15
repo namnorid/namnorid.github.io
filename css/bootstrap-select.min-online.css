@@ -40,10 +40,13 @@ select.selectpicker {
 .bootstrap-select3>.dropdown-toggle.bs-placeholder {
     color: #6c757d;
     background-color: transparent;
-    box-shadow: none;
     border-color: transparent;
     border-radius: 0 !important;
     -webkit-border-radius:0 !important;
+    -webkit-box-shadow: 0 0.5px 0.5px rgb(150, 150, 150), 1;
+    -moz-box-shadow: 0 0.5px 0.5px rgb(150, 150, 150, 1);
+    box-shadow: 0 0.5px 0.5px rgb(150, 150, 150, 1);
+    /*margin-left: 20px;*/
 }
 
 .bootstrap-select>.dropdown-toggle.bs-placeholder:active,
@@ -113,6 +116,26 @@ select.selectpicker {
     top: 0;
     left: 0;
     display: block !important;
+    width: 100% !important;
+    z-index: 2;
+}
+
+.bootstrap-select3>select {
+    position: absolute !important;
+    bottom: 0;
+    left: 50%;
+    display: none !important;
+    width: .5px !important;
+    height: 100% !important;
+    padding: 0 !important;
+    opacity: 0 !important;
+    border: none;
+}
+
+.bootstrap-select3>select.mobile-device {
+    top: 0;
+    left: 0;
+    display: none !important;
     width: 100% !important;
     z-index: 2;
 }

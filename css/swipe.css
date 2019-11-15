@@ -341,18 +341,13 @@ body {
 	top:1px;
 }
 .minknapp {
-	box-shadow:inset 0px 1px 0px 0px #9acc85;
-	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
-	background-color:#74ad5a;
-	border:1px solid #3b6e22;
+	background-color:#f8f9fa;
+	border: inset 0 0.3px 0.3px rgb(150, 150, 150, 1);
 	display:inline-block;
 	cursor: pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:13px;
 	font-weight:bold;
-  padding:16px 12px;
-	text-decoration:none;
+  text-decoration:none;
+  border-radius: 200px;
 }
 .minknapp:hover {
 	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
@@ -517,6 +512,11 @@ hr.style18:before {
   border-width: 0 0 1px 0; 
   border-radius: 20px; 
 }
+hr.style19 { 
+  -webkit-box-shadow: inset 0 0.3px 0.3px rgb(150, 150, 150, 1);
+  -moz-box-shadow: inset 0 0.3px 0.3px rgb(150, 150, 150, 1);
+  box-shadow: inset 0 0.3px 0.3px rgb(150, 150, 150, 1);
+  } 
 .container3 {
   padding: 0 1em;
   padding-top: 10px;
